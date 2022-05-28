@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+
+
+<html lang="ko">
+
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>COLUMBIA</title>
+
+  <link rel="ico" href="./favicon.ico.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="./css/common.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+  
+  <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <!-- GSAP & ScrollToPlugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js" integrity="sha512-lZACdYsy0W98dOcn+QRNHDxFuhm62lfs8qK5+wPp7X358CN3f+ml49HpnwzTiXFzETs4++fADePDI+L2zwlm7Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <!-- SWIPER -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  
+  <!-- ScrollMagic -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <!-- AOS.js -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  <script defer src="./js/common.js"></script>
+  <script defer src="./js/main.js"></script>
+
+</head>
+
+
+<body>
+
+
+  <div class="high pc-only">
+
+    <ul>
+      <li class="left">Columbia</li>
+      <li class="right">Sportware</li>
+    </ul>
+
+    <div>
+      <ul class="snb">
+        <li><a href="javascript:void(0)">배송조회</a></li>
+        <!-- <li><a href="javascript:void(0)">Sign In</a></li>
+        <li><a href="javascript:void(0)">Join</a></li> -->
+        <li onClick="alert('회원가입 또는 로그인을 하신후 사용하시기 바랍니다.')"><a href="javascript:void(0)">My page</a></li>
+        <li onClick="alert('회원가입 또는 로그인을 하신후 사용하시기 바랍니다.')"><a href="javascript:void(0)"><span class="material-symbols-outlined">favorite</span></a></li>
+        <li><a href="javascript:void(0)"><span class="material-symbols-outlined">shopping_bag</span></a></li>
+      </ul>
+      <div class="coupon">10% COUPON</div>
+    </div>
+
+  </div>
+
+
+  <header id="header">
+
+    <div class="inner">
+      
+      <h1><a href="/" title="컬럼비아 로고"></a></h1>
+
+      <div class="header_con">
+
+        <a href="javascript:void(0)" class="menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+
+
+        <nav>
+          
+          <div class="depth2">
+           
+            <div class="depth2_inner">
+           
+              <ul class="special">
+                <li><a href="javascript:void(0)">NEW<span class="material-symbols-outlined">chevron_right</span></a></li>
+                <li><a href="javascript:void(0)">BEST<span class="material-symbols-outlined">chevron_right</span></a></li>
+                <li><a href="javascript:void(0)">BLACK LABEL<span class="material-symbols-outlined">chevron_right</span></a></li>
+                <li><a href="javascript:void(0)">ICONS<span class="material-symbols-outlined">chevron_right</span></a></li>
+                <li><a href="javascript:void(0)">PFG<span class="material-symbols-outlined">chevron_right</span></a></li>
+              </ul>
+           
+              <ul class="depth3">
+                <li>
+                  <a href="javascript:void(0)">MEN</a>
+                  <ul class="sub">
+                    <li><a href="javascript:void(0)">Jacket</a></li>
+                    <li><a href="javascript:void(0)">Top</a></li>
+                    <li><a href="javascript:void(0)">Pants</a></li>
+                    <li><a href="javascript:void(0)">activity</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">WOMEN</a>
+                  <ul class="sub">
+                    <li><a href="javascript:void(0)">Jacket</a></li>
+                    <li><a href="javascript:void(0)">Top</a></li>
+                    <li><a href="javascript:void(0)">Pants</a></li>
+                    <li><a href="javascript:void(0)">activity</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">KIDS</a>
+                  <ul class="sub">
+                    <li><a href="javascript:void(0)">Jacket</a></li>
+                    <li><a href="javascript:void(0)">Top</a></li>
+                    <li><a href="javascript:void(0)">SetUp</a></li>
+                    <li><a href="javascript:void(0)">Pants</a></li>
+                    <li><a href="javascript:void(0)">Bag</a></li>
+                    <li><a href="javascript:void(0)">Cap</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">FOOTWEAR</a>
+                  <ul class="sub">
+                    <li><a href="javascript:void(0)">Hiking</a></li>
+                    <li><a href="javascript:void(0)">Trail Running</a></li>
+                    <li><a href="javascript:void(0)">Sneakers</a></li>
+                    <li><a href="javascript:void(0)">Sandals &#38; Slippers</a></li>
+                    <li><a href="javascript:void(0)">Collections</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">ACC</a>
+                  <ul class="sub">
+                    <li><a href="javascript:void(0)">Bag</a></li>
+                    <li><a href="javascript:void(0)">Cap</a></li>
+                    <li><a href="javascript:void(0)">Others</a></li>
+                    <li><a href="javascript:void(0)">Gloves</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">TECHNOLOGY</a>
+                  <ul class="sub">
+                    <li><a href="javascript:void(0)">Protected</a></li>
+                    <li><a href="javascript:void(0)">Dry</a></li>
+                    <li><a href="javascript:void(0)">Cool</a></li>
+                    <li><a href="javascript:void(0)">Warm</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Activity</a>
+                  <ul class="sub">
+                    <li><a href="javascript:void(0)">Fishing</a></li>
+                    <li><a href="javascript:void(0)">Hiking</a></li>
+                    <li><a href="javascript:void(0)">Casual &#38; Travel</a></li>
+                    <li><a href="javascript:void(0)">Trail Running</a></li>
+                  </ul>
+                </li>
+              </ul>
+            
+            </div>
+          
+          </div>
+  
+          <div class="gnb_dim-mo"></div>
+          <div class="gnb_con">
+            <ul class="gnb">
+              <li class="depth1"><a href="javascript:void(0)">Contact Us<span class="material-symbols-outlined mobile-only">chevron_right</span></a></li>
+              <li class="depth1"><a href="javascript:void(0)">Product<span class="material-symbols-outlined mobile-only">chevron_right</span></a></li>
+              <li class="depth1"><a href="./signin/">Login<span class="material-symbols-outlined mobile-only">chevron_right</span></a></li>
+              <li class="depth1"><a href="javascript:void(0)">Join<span class="material-symbols-outlined mobile-only">chevron_right</span></a></li>
+              <li class="depth1"><a href="javascript:void(0)">Notice<span class="material-symbols-outlined mobile-only">chevron_right</span></a></li>
+              <li class="depth1"><a href="javascript:void(0)">FAQ<span class="material-symbols-outlined mobile-only">chevron_right</span></a></li>
+            </ul>
+            <div class="event-mo mobile-only">
+              <h4>Columbia Event</h4>
+              <div class="swiper-container">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide"><a href="javascript:void(0)"><img src="./images/event01_mo.png" alt="columbia black label 기획전" /></a></li>
+                  <li class="swiper-slide"><a href="javascript:void(0)"><img src="./images/event02_mo.png" alt="5월 금액 할인 혜택" /></a></li>
+                  <li class="swiper-slide"><a href="javascript:void(0)"><img src="./images/event03_mo.png" alt="set up styling 기획전" /></a></li>
+                  <li class="swiper-slide"><a href="javascript:void(0)"><img src="./images/event04_mo.png" alt="The columbia icon collection" style="object-position: left;"/></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          
+        </nav>
+        
+        
+        <div class="right_wrapper">
+ 
+          <div class="keyword-container">
+            <span class="key-tit">HOT KEYWORD</span>
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="javascript:void(0)"><strong>1.</strong> 등산화</a></div>
+                <div class="swiper-slide"><a href="javascript:void(0)"><strong>2.</strong> 바람막이</a></div>
+                <div class="swiper-slide"><a href="javascript:void(0)"><strong>3.</strong> 백팩</a></div>
+                <div class="swiper-slide"><a href="javascript:void(0)"><strong>4.</strong> 플리스</a></div>
+                <div class="swiper-slide"><a href="javascript:void(0)"><strong>5.</strong> 패딩</a></div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="search">
+            <div id="openSch"><a href="javascript:void(0)"><span class="material-symbols-outlined">search</span></a></div>
+            <div class="searchzone-container">
+              <div class="search_inner">
+                <div>
+                  <input type="text" placeholder="검색어를 입력해주세요." id="texts">
+                  <ul>
+                    <li><a href="javascript:void(0)"><span class="material-symbols-outlined">search</span></a></li>
+                    <li id="closeSch"><a href="javascript:void(0)"><span class="material-symbols-outlined">clear</span></a></li> 
+                  </ul>
+                </div>
+                <div>
+                  <section class="recent">
+                    <span class="search-tit">최근 검색어</span>
+                    <div>최근 검색어가 없습니다</div>
+                  </section>
+                  <section class="hot">
+                    <span class="search-tit">핫 키워드</span>
+                    <ul>
+                      <li class="fade-in"><a href="javascript:void(0)"><strong>1.</strong> 등산화</a></li>
+                      <li class="fade-in"><a href="javascript:void(0)"><strong>2.</strong> 바람막이</a></li>
+                      <li class="fade-in"><a href="javascript:void(0)"><strong>3.</strong> 백팩</a></li>
+                      <li class="fade-in"><a href="javascript:void(0)"><strong>4.</strong> 플리스</a></li>
+                      <li class="fade-in"><a href="javascript:void(0)"><strong>5.</strong> 패딩</a></li>
+                      <li class="fade-in"><a href="javascript:void(0)"><strong>6.</strong> 모자</a></li>
+                      <li class="fade-in"><a href="javascript:void(0)"><strong>7.</strong> 버킷햇</a></li>
+                      <li class="fade-in"><a href="javascript:void(0)"><strong>8.</strong> 팬츠</a></li>
+                    </ul>
+                  </section>
+                  <section class="rec">
+                    <span class="search-tit">추천 상품</span>
+                    <ul>
+                      <li>
+                        <div class="search-pic">
+                          <a href="javascript:void(0)"><img src="https://assetscdn.styleship.com/assets/columbia/data/productimages/a/2/C32PM0247240.jpg" alt="[BLACK LABEL] Lamar Slope™ SS Tee" /></a>
+                        </div>
+                        <div class="search-desc">
+                          <span class="search-prod">[BLACK LABEL] Lamar Slope™ SS Tee</span>
+                          <span class="search-price">69,000원</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="search-pic">
+                          <a href="javascript:void(0)"><img src="./images/rec_prod02.jpg" alt="Bahama™ Short Sleeve Shirt" /></a>
+                        </div>
+                        <div class="search-desc">
+                          <span class="search-prod">Bahama™ Short Sleeve Shirt</span>
+                          <span class="search-price">45,000원</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="search-pic">
+                          <a href="javascript:void(0)"><img src="./images/rec_prod03.jpg" alt="Price Stream™ Pouch" /></a>
+                        </div>
+                        <div class="search-desc">
+                          <span class="search-prod">Price Stream™ Pouch</span>
+                          <span class="search-price">9,000원</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </section>
+                </div>
+              </div>  
+            </div>
+          </div>
+        
+        </div>
+      
+      </div>
+      
+    </div>
+  
+  </header>
+
+
+  <main>
+
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide main-pic">
+          <div class="main-pic-01"><a href="javascript:void(0)" title="여름엔 바하마 셔츠"></a></div>
+          <div class="texts">
+            <span class="sub-tit delay1">피싱도 캠핑도</span>
+            <span class="tit delay2">여름엔 바하마 셔츠</span>
+            <span class="hash delay3">&#35;Fishing &#35;Camping &#35;Outdoor</span>
+            <button class="reverse delay4"><a href="javascript:void(0)">Detail view</a><span class="material-symbols-outlined">chevron_right</span></button>
+          </div>
+        </div>
+        <div class="swiper-slide main-pic">
+          <div class="main-pic-02"><a href="javascript:void(0)" title="봄기운 가득한 신상 자켓"></a></div>
+          <div class="texts">
+            <span class="sub-tit delay1">봄기운 가득한 신상 자켓</span>
+            <span class="tit delay2">New Spring Jacket</span>
+            <span class="hash delay3">새로운 봄맞이 준비 &#35;방수자켓 &#35;바람막이 &#35;아노락</span>
+            <button class="reverse delay4"><a href="javascript:void(0)">Detail view</a><span class="material-symbols-outlined">chevron_right</span></button>
+          </div>
+        </div>
+        <div class="swiper-slide main-pic">
+          <div class="main-pic main-pic-03"><a href="javascript:void(0)" title="The Columbia Icons Collection"></a></div>
+          <div class="texts cen">
+            <span class="sub-tit gray delay1">2022 S/S</span>
+            <span class="tit gray delay2">The Columbia Icons Collection</span>
+            <span class="hash gray delay3">&#35;Limited &#35;Heritage &#35;Newtro</span>
+            <button class="primary delay4"><a href="javascript:void(0)">Detail view</a><span class="material-symbols-outlined">chevron_right</span></button>
+          </div>  
+        </div>
+        <div class="swiper-slide main-pic">
+          <div class="main-pic-04"><a href="javascript:void(0)" title="Columbia Black Label"></a></div>
+          <div class="texts">
+            <span class="sub-tit delay1">새로운 백팩 여행의 시작</span>
+            <span class="tit delay2">Find The Backpack</span>
+            <span class="hash delay3">&#35;데일리 &#35;하이킹 &#35;백패킹</span>
+            <button class="reverse delay4"><a href="javascript:void(0)">Detail view</a><span class="material-symbols-outlined">chevron_right</span></button>
+          </div>
+        </div>
+        <div class="swiper-slide main-pic">
+          <div class="main-pic main-pic-05"><a href="javascript:void(0)" title="나만의 컬럼비아 신발 가이드"></a></div>
+          <div class="texts cen">
+            <span class="sub-tit delay1">나만의 컬럼비아 신발 가이드</span>
+            <span class="tit delay2">Shoew For An Activity</span>
+            <span class="hash delay3">&#35;캠핑 &#35;트래킹 &#35;하이킹</span>
+            <button class="reverse delay4"><a href="javascript:void(0)">Detail view</a><span class="material-symbols-outlined">chevron_right</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    
+  </main>
+
+
+  <article class="md-prod" data-aos="fade-up">
+    
+    <h2>MD's Pick</h2>
+    <h3 class="kor">컬럼비아 추천상품</h3>
+    
+    <div class="inner">
+    
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="md-prod-pic prod1">
+              <a href="javascript:void(0)" class="pic"></a>
+              <a href="javascript:void(0)" class="like-icon"><span class="material-symbols-outlined wish">favorite</span></a>
+            </div>
+            <div class="md-prod-desc">
+              <span class="tag">MEN</span>
+              <span class="prod-name">Brig Peak Back Graphic Tee</span>
+              <span class="price">39,000원</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="md-prod-pic prod2">
+              <a href="javascript:void(0)" class="pic"></a>
+              <a href="javascript:void(0)" class="like-icon"><span class="material-symbols-outlined wish">favorite</span></a>
+            </div>
+            <div class="md-prod-desc">
+              <span class="tag">MEN</span>
+              <span class="prod-name">Colvin Pines™ Crew</span>
+              <span class="price">59,000원</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="md-prod-pic prod3">
+              <a href="javascript:void(0)" class="pic"></a>
+              <a href="javascript:void(0)" class="like-icon"><span class="material-symbols-outlined wish">favorite</span></a>
+            </div>
+            <div class="md-prod-desc">
+              <span class="tag">MEN</span>
+              <span class="prod-name">Dash to Hill™ III Pants</span>
+              <span class="price">129,000원</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="md-prod-pic prod4">
+              <a href="javascript:void(0)" class="pic"></a>
+              <a href="javascript:void(0)" class="like-icon"><span class="material-symbols-outlined wish">favorite</span></a>
+            </div>
+            <div class="md-prod-desc">
+              <span class="tag">MEN</span>
+              <span class="prod-name">Rolling Cove™ Pants</span>
+              <span class="price">99,000원</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="md-prod-pic prod5">
+              <a href="javascript:void(0)" class="pic"></a>
+              <a href="javascript:void(0)" class="like-icon"><span class="material-symbols-outlined wish">favorite</span></a>
+            </div>
+            <div class="md-prod-desc">
+              <span class="tag">ACC</span>
+              <span class="prod-name">Castle Rock™ 15L Backpack</span>
+              <span class="price">69,000원</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="md-prod-pic prod6">
+              <a href="javascript:void(0)" class="pic"></a>
+              <a href="javascript:void(0)" class="like-icon"><span class="material-symbols-outlined wish">favorite</span></a>
+            </div>
+            <div class="md-prod-desc">
+              <span class="tag">WOMEN</span>
+              <span class="prod-name">Day Trippin™ Crop Jacket</span>
+              <span class="price">139,000원</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="md-prod-pic prod7">
+              <a href="javascript:void(0)" class="pic"></a>
+              <a href="javascript:void(0)" class="like-icon"><span class="material-symbols-outlined wish">favorite</span></a>
+            </div>
+            <div class="md-prod-desc">
+              <span class="tag">WOMEN</span>
+              <span class="prod-name">Columbia Lodge™ French Terry FZ</span>
+              <span class="price">79,000원</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="md-prod-pic prod8">
+              <a href="javascript:void(0)" class="pic"></a>
+              <a href="javascript:void(0)" class="like-icon"><span class="material-symbols-outlined wish">favorite</span></a>
+            </div>
+            <div class="md-prod-desc">
+              <span class="tag">ACC</span>
+              <span class="prod-name">Symmes Bowl™ Booney</span>
+              <span class="price">49,000원</span>
+            </div>
+          </div>
+        </div>     
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+  
+    </div>
+  
+  </article>
+
+  <article class="collection" data-aos="fade-up">
+    
+    <h2>Collection</h2>
+    <h3>2022 Summer collection</h3>
+    
+    <div class="inner">
+    
+      <div class="mainSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="javascript:void(0)" class="main-pic1"></a>
+            <div class="collect-text">
+              <span class="collect-sub">&#35;01</span>
+              <span class="collect-name">BAHAMA™ Shirt</span>
+              <span class="collect-desc">레저활동엔 바하마 셔츠,<br />가볍고 시원한 퍼포먼스 디테일</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <a href="javascript:void(0)" class="main-pic2"></a>
+            <div class="collect-text">
+              <span class="collect-sub">&#35;02</span>
+              <span class="collect-name">BAHAMA™ Icon SS Shirt</span>
+              <span class="collect-desc">헤리티지한 그래픽 자수의 <br />바하마 아이콘 셔츠</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <a href="javascript:void(0)" class="main-pic3"></a>
+            <div class="collect-text">
+              <span class="collect-sub">&#35;03</span>
+              <span class="collect-name">PFG™ ICON Pocket Tee</span>
+              <span class="collect-desc">PEG특유의 그래픽 자수 <br />PFG™ 아이콘 티셔츠</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <div class="subSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <ul class="collect-pic sub-pic1">
+              <li>
+                <div class="collect-prod-pic">
+                  <a href="javascript:void(0)" class="sub-pic1-1"></a>
+                  <a href="javascript:void(0)" class="like-icon"><span class="material-symbols-outlined">favorite</span></a>
+                </div>
+                <div class="collect-prod-desc">
+                  <span class="tag">MEN</span>
+                  <span class="prod-name">Bahama™ II S/S Shirt</span>
+                  <span class="price">89,000원</span>
+                </div>
+              </li>
+              <li>
+                <div class="collect-prod-pic">
+                  <a href="javascript:void(0)" class="sub-pic1-2"></a>
+                  <a href="javascript:void(0)" class="like-icon"><span class="material-symbols-outlined">favorite</span></a>
+                </div>
+                <div class="collect-prod-desc">
+                  <span class="tag">MEN</span>
+                  <span class="prod-name">Bahama™ II S/S Shirt</span>
+                  <span class="price">89,000원</span>
+                </div>
+              </li>
+              <li>
+                <div class="collect-prod-pic">
+                  <a href="javascript:void(0)" class="sub-pic1-3"></a>
+                  <a href="javascript:void(0)" class="like-icon"><span class="material-symbols-outlined">favorite</span></a>
+                </div>
+                <div class="collect-prod-desc">
+                  <span class="tag">MEN</span>
+                  <span class="prod-name">Bahama™ II S/S Shirt</span>
+                  <span class="price">89,000원</span>
+                </div>
+              </li>
+              <li>
+                <div class="collect-prod-pic">
+                  <a href="javascript:void(0)" class="sub-pic1-4"></a>
+                  <a href="javascript:void(0)" class="like-icon"><span class="material-symbols-outlined">favorite</span></a>
+                </div>
+                <div class="collect-prod-desc">
+                  <span class="tag">MEN</span>
+                  <span class="prod-name">Bahama™ II S/S Shirt</span>
+                  <span class="price">89,000원</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="swiper-slide">
+            <ul class="collect-pic">
+              <li>
+                <div class="collect-prod-pic sub-pic2">
+                  <a href="javascript:void(0)" class="sub-pic2-1"></a>
+                  <a href="javascript:void(0)" class="like-icon"><span class="material-symbols-outlined">favorite</span></a>
+                </div>
+                <div class="collect-prod-desc">
+                  <span class="tag">MEN</span>
+                  <span class="prod-name">Bahama™ ICON SS Shirt</span>
+                  <span class="price">109,000원</span>
+                </div>
+              </li>
+              <li>
+                <div class="collect-prod-pic sub-pic2">
+                  <a href="javascript:void(0)" class="sub-pic2-2"></a>
+                  <a href="javascript:void(0)" class="like-icon"><span class="material-symbols-outlined">favorite</span></a>
+                </div>
+                <div class="collect-prod-desc">
+                  <span class="tag">MEN</span>
+                  <span class="prod-name">Bahama™ ICON SS Shirt</span>
+                  <span class="price">109,000원</span>
+                </div>
+              </li>
+              <li>
+                <div class="collect-prod-pic sub-pic2">
+                  <a href="javascript:void(0)" class="sub-pic2-3"></a>
+                  <a href="javascript:void(0)" class="like-icon"><span class="material-symbols-outlined">favorite</span></a>
+                </div>
+                <div class="collect-prod-desc">
+                  <span class="tag">MEN</span>
+                  <span class="prod-name">Bahama™ ICON SS Shirt</span>
+                  <span class="price">109,000원</span>
+                </div>
+              </li>
+              <li>
+                <div class="collect-prod-pic sub-pic2">
+                  <a href="javascript:void(0)" class="sub-pic2-4"></a>
+                  <a href="javascript:void(0)" class="like-icon"><span class="material-symbols-outlined">favorite</span></a>
+                </div>
+                <div class="collect-prod-desc">
+                  <span class="tag">MEN</span>
+                  <span class="prod-name">Super Bahama™ SS Shirt</span>
+                  <span class="price">99,000원</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="swiper-slide">
+            <ul class="collect-pic">
+              <li>
+                <div class="collect-prod-pic sub-pic3">
+                  <a href="javascript:void(0)" class="sub-pic3-1"></a>
+                  <a href="javascript:void(0)" class="like-icon"><span class="material-symbols-outlined">favorite</span></a>
+                </div>
+                <div class="collect-prod-desc">
+                  <span class="tag">남주혁착용</span>
+                  <span class="prod-name"><p class="eng">PFG™ ICON Pocket Tee</p></span>
+                  <span class="price">29,000원 <del>49,000원</del></span>
+                </div>
+              </li>
+              <li>
+                <div class="collect-prod-pic sub-pic3">
+                  <a href="javascript:void(0)" class="sub-pic3-2"></a>
+                  <a href="javascript:void(0)" class="like-icon"><span class="material-symbols-outlined">favorite</span></a>
+                </div>
+                <div class="collect-prod-desc">
+                  <span class="tag">MEN</span>
+                  <span class="prod-name"><p class="eng">PFG™ ICON Pocket Tee</p></span>
+                  <span class="price">29,000원 <del>49,000원</del></span>
+                </div>
+              </li>
+              <li>
+                <div class="collect-prod-pic sub-pic3">
+                  <a href="javascript:void(0)" class="sub-pic3-3"></a>
+                  <a href="javascript:void(0)" class="like-icon"><span class="material-symbols-outlined">favorite</span></a>
+                </div>
+                <div class="collect-prod-desc">
+                  <span class="tag">박병은착용</span>
+                  <span class="prod-name"><p class="eng">PFG™ ICON Pocket Tee</p></span>
+                  <span class="price">29,000원 <del>49,000원</del></span>
+                </div>
+              </li>
+              <li>
+                <div class="collect-prod-pic sub-pic3">
+                  <a href="javascript:void(0)" class="sub-pic3-4"></a>
+                  <a href="javascript:void(0)" class="like-icon"><span class="material-symbols-outlined">favorite</span></a>
+                </div>
+                <div class="collect-prod-desc">
+                  <span class="tag">MEN</span>
+                  <span class="prod-name"><p class="eng">PFG™ ICON Pocket Tee</p></span>
+                  <span class="price">29,000원 <del>49,000원</del></span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    
+    </div>
+  
+  </article>
+
+  <article class="featured" data-aos="fade-up">
+    
+    <div class="inner">
+    
+      <div class="featured_con" data-aos="fade-up" data-aos-duration="1000">
+        <a href="javascript:void(0)" title="Spring 30% sale"></a>
+        <h2>More Savings, More Fun</h2>
+        <h3>SPRING 30% SALE</h3>
+        <button class="primary"><a href="javascript:void(0)">View more</a><span class="material-symbols-outlined">chevron_right</span></button>
+      </div>
+      <div class="featured_con" data-aos="fade-up">
+        <a href="javascript:void(0)" title="cap&booney collection"></a>
+        <h2>Spring Eseential Item</h2>
+        <h3>&#35;Cap &#35;Bucket &#35;Booney &#35;Accessory</h3>
+        <button class="primary"><a href="javascript:void(0)">View more</a><span class="material-symbols-outlined">chevron_right</span></button>
+      </div>
+    
+    </div>
+  
+  </article>
+
+  <article class="brandflim" data-aos="fade-up">
+    
+    <h2>2022 Summer <br class="mobile-only" /> with Columbia</h2>
+    <h3 class="kor">답답한 일상에서 벗어나, <br class="mobile-only" /> 색다른 세상 밖으로</h3>
+    
+    <div class="video-wrapper">
+      <video poster="./images/summer_bahama.jpg" autoplay="" loop="" muted="" playsinline="">
+        <source src="/images/summer_bahama.mp4" type="video/mp4" />
+      </video>
+    </div>
+  
+  </article>
+
+  <article class="instagram" data-aos="fade-up">
+    
+    <h2>Instagram</h2>
+    <h3>&#64;columbia_kr</h3>
+    
+    <div class="inner">
+    
+      <div class="swiper-container">
+        <div class="swiper-wrapper insta_con">
+          <div class="swiper-slide insta_pic">
+            <a href="javascript:void(0)">
+              <img src="./images/instgram01.jpg" alt="컬럼비아 인스타그램" />
+              <span class="material-symbols-outlined shop_link">shopping_bag</span>
+            </a>
+          </div>
+          <div class="swiper-slide insta_pic">
+            <a href="javascript:void(0)">
+              <img src="./images/instgram02.jpg" alt="컬럼비아 인스타그램" />
+              <span class="material-symbols-outlined shop_link">shopping_bag</span>
+            </a>
+          </div>
+          <div class="swiper-slide insta_pic">
+            <a href="javascript:void(0)">
+              <img src="./images/instgram03.jpg" alt="컬럼비아 인스타그램" />
+              <span class="material-symbols-outlined shop_link">shopping_bag</span>
+            </a>
+          </div>
+          <div class="swiper-slide insta_pic">
+            <a href="javascript:void(0)">
+              <img src="./images/instgram04.jpg" alt="컬럼비아 인스타그램" />
+              <span class="material-symbols-outlined shop_link">shopping_bag</span>
+            </a>
+          </div>
+          <div class="swiper-slide insta_pic">
+            <a href="javascript:void(0)">
+              <img src="./images/instgram05.jpg" alt="컬럼비아 인스타그램" />
+              <span class="material-symbols-outlined shop_link">shopping_bag</span>
+            </a>
+          </div>
+          <div class="swiper-slide insta_pic">
+            <a href="javascript:void(0)">
+              <img src="./images/instgram06.jpg" alt="컬럼비아 인스타그램" />
+              <span class="material-symbols-outlined shop_link">shopping_bag</span>
+            </a>
+          </div>
+          <div class="swiper-slide insta_pic">
+            <a href="javascript:void(0)">
+              <img src="./images/instgram07.jpg" alt="컬럼비아 인스타그램" />
+              <span class="material-symbols-outlined shop_link">shopping_bag</span>
+            </a>
+          </div>
+          <div class="swiper-slide insta_pic">
+            <a href="javascript:void(0)">
+              <img src="./images/instgram08.jpg" alt="컬럼비아 인스타그램" />
+              <span class="material-symbols-outlined shop_link">shopping_bag</span>
+            </a>
+          </div>
+        </div>
+      
+      </div>
+    
+    </div>
+  
+  </article>
+
+  <div class="benefit">
+    
+    <ul class="inner">
+      <li>
+        <a href="javascript:void(0)"><img src="./images/benefit01.png" alt="신규회원혜택" /></a>
+        <div class="desc">
+          <span>신규회원혜택</span>
+          <p>10% 할인 장바구니 쿠폰 <br /> 생일 축하 1만원 증정</p>
+          <button class="primary pc-only"><a href="javascript:void(0)">View more</a><span class="material-symbols-outlined">chevron_right</span></button>
+        </div>
+      </li>
+      <li>
+        <a href="javascript:void(0)"><img src="./images/benefit02.png" alt="구매금액별할인" /></a>
+        <div class="desc">
+          <span>구매금액별할인</span>
+          <p class="benefit-text">5/10/20/30/40만원 이상 구매 시 <br />최대 4만원 할인 혜택</p>
+          <button class="primary pc-only"><a href="javascript:void(0)">View more</a><span class="material-symbols-outlined">chevron_right</span></button>
+        </div>
+      </li>
+      <li>
+        <a href="javascript:void(0)"><img src="./images/benefit03.png" alt="무이자 카드혜택" /></a>
+        <div class="desc">
+          <span>무이자 카드혜택</span>
+          <p>무이자 할부로<br />부담없이 쇼핑을 즐기세요!</p>
+          <button class="primary pc-only"><a href="javascript:void(0)">View more</a><span class="material-symbols-outlined">chevron_right</span></button>
+        </div>
+      </li>
+    </ul>
+  
+  </div>
+
+  <footer>
+
+    <div class="inner">
+   
+      <div class="f_top">
+   
+        <div class="left">
+          <ul class="low">
+            <li><a href="javascript:void(0)">About Us</a></li>
+            <li><a href="javascript:void(0)">이용약관</a></li>
+            <li><a href="javascript:void(0)"><strong>개인정보처리방침</strong></a></li>
+            <li><a href="javascript:void(0)">이용안내</a></li>
+            <li><a href="javascript:void(0)">대리점 개설문의</a></li>
+          </ul>
+          <div class="cs">
+            <ul class="offline">
+              <li class="cs-tit"><strong>컬럼비아 대표번호</strong><br /> 매장고객 및 AS문의</li>
+              <li class="cs-tel"><a href="javascript:void(0)">080-540-0277</a></li>
+              <li class="cs-day">평일 09:30 ~ 17:30</li>
+            </ul>
+            <ul class="online">
+              <li class="cs-tit"><strong>온라인 스토어 고객센터</strong><br /> 온라인몰 고객 문의</li>
+              <li class="cs-tel"><a href="javascript:void(0)">1800-1784</a></li>
+              <li class="cs-day">평일 10:00 ~ 17:00</li>
+            </ul>
+          </div>
+        </div>  
+   
+        <div class="right">
+          <ul class="sns">
+            <li><a href="javascript:void(0)"><img src="./images/ico_instagram.png" alt="인스타그램" /></a></li>
+            <li><a href="javascript:void(0)"><img src="./images/ico_facebook.png" alt="페이스북" /></a></li>
+            <li><a href="javascript:void(0)"><img src="./images/ico_youtube.png" alt="유튜브" /></a></li>
+            <li><a href="javascript:void(0)"><img src="./images/ico_kakao.png" alt="카카오톡 채널추가"></a></li>
+          </ul>
+          <button class="reverse"><a href="javascript:void(0)">International Site</a><span class="material-symbols-outlined">chevron_right</span></button>
+        </div>
+   
+      </div>
+   
+      <div class="f_bottom">
+       
+        <div class="f_logo">
+          <img src="./images/f_logo_gr.png" alt="컬럼비아 하단 로고" />
+          <span class="material-symbols-outlined mobile-only">expand_more</span>
+        </div>
+       
+        <address>
+          <ul>
+            <li>컬럼비아스포츠웨어코리아 대표이사: 배정원</li>
+            <li>서울특별시 동대문구 천호대로 429, 7~10층</li>
+            <li><a href="javascript:void(0)">사업자등록번호: 120-81-63458</a></li>
+            <li>통신판매신고번호: 2013-서울동대문-0848</li>
+            <li>개인정보 보호책임자: 전기석</li>
+            <li><a href="javascript:void(0)">E-mail: kr-mall@columbia.com</a></li>
+          </ul>
+          <div class="copy">
+            <p>COPYRIGHT 2022 &copy; Columbia Sportswear Company. ALL RIGHTS RESERVED</p>
+          </div>
+        </address>
+       
+        <div class="inicis pc-only"><a href="javascript:void(0)"><img src="./images/inicis.png" alt="이니시스" /></a></div>
+      
+      </div>
+    
+    </div>
+  
+  </footer>
+
+
+  <div id="to-top">
+    <span class="material-symbols-outlined">vertical_align_top</span>
+  </div>
+
+
+</body>
+
+
+</html>
