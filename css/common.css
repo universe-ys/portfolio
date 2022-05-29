@@ -165,6 +165,8 @@ span.hash.gray { color: #333; }
 
 del { color: #990000; }
 
+.hidden { display: none; }
+
 #to-top {
   width: 42px;
   height: 42px;
