@@ -31,13 +31,9 @@ input {
   padding: 3rem 10px !important;
 }
 
-.swiper-button-prev {
-  left: -70px !important;
-}
+.swiper-button-prev { left: -70px !important; }
 
-.swiper-button-next {
-  right: -70px !important;
-}
+.swiper-button-next { right: -70px !important; }
 
 .swiper-button-prev::after, 
 .swiper-button-next::after {
@@ -53,9 +49,7 @@ main {
   overflow: hidden;
 }
 
-main .swiper-container {
-  position: relative;
-}
+main .swiper-container { position: relative; }
 
 main .main-pic {
   position: relative;

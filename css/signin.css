@@ -1,4 +1,4 @@
-/* SIGNIN */
+/* MOBILE */
 input {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 1.4rem;
@@ -18,13 +18,9 @@ input {
   color: #828282;
 }
 
-.signin .inner {
-  padding: 2rem 0;
-}
+.signin .inner { padding: 2rem 0; }
 
-.signin .banner {
-  margin-bottom: 1rem;
-}
+.signin .banner { margin-bottom: 1rem; }
 
 .signin .banner a img {
   width: 100%;
@@ -55,21 +51,13 @@ input {
   margin: 0 auto;
 }
 
-.signin .membership-container form {
-  margin: 3rem 0;
-}
+.signin .membership-container form { margin: 3rem 0; }
 
-.signin .membership-container dt {
-  display: none;
-}
+.signin .membership-container dt { display: none; }
 
-.signin .membership-container dl {
-  margin: 1rem 0;
-}
+.signin .membership-container dl { margin: 1rem 0; }
 
-.signin .membership-container dl dd {
-  border: 1px solid #333;
-}
+.signin .membership-container dl dd { border: 1px solid #333; }
 
 .signin .membership-container .sns_login> :first-child {
   padding: 10px 20px;
@@ -119,9 +107,7 @@ input {
   margin: 1rem 0;
 }
 
-.signin .membership-container .login_find> li {
-  position: relative;
-}
+.signin .membership-container .login_find> li { position: relative; }
 
 .signin .membership-container .login_find> li:not(:last-child) {
   margin-right: 1rem;
@@ -138,9 +124,7 @@ input {
   right: -8px;
 }
 
-.signin .membership-container .guest_order {
-  margin: 2rem 0;
-}
+.signin .membership-container .guest_order { margin: 2rem 0; }
 
 .signin .membership-container .guest_order .guest_txt strong {
   font-size: 1.1rem;
@@ -153,10 +137,9 @@ input {
 }
 
 
+/* LAPTOP */
 @media screen and (min-width: 1200px) {
 
-  .signin {
-    padding: 200px 0 2rem;
-  }
+  .signin { padding: 200px 0 2rem; }
 
 }
