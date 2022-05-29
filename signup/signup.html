@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+
+
+<html lang="ko">
+
+
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+    <title>COLUMBIA</title>
+  
+    <link rel="ico" href="./favicon.ico.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/signup.css" />
+    
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- GSAP & ScrollToPlugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js" integrity="sha512-lZACdYsy0W98dOcn+QRNHDxFuhm62lfs8qK5+wPp7X358CN3f+ml49HpnwzTiXFzETs4++fADePDI+L2zwlm7Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    
+    <!-- ScrollMagic -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- AOS.js -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script defer src="../js/common.js"></script>
+  
+  </head>
+
+
+<body>
+  
+  <div class="high pc-only">
+
+    <ul>
+      <li class="left">Columbia</li>
+      <li class="right">Sportware</li>
+    </ul>
+
+    <div>
+      <ul class="snb">
+        <li><a href="javascript:void(0)">배송조회</a></li>
+        <!-- <li><a href="javascript:void(0)">Sign In</a></li>
+        <li><a href="javascript:void(0)">Join</a></li> -->
+        <li onClick="alert('회원가입 또는 로그인을 하신후 사용하시기 바랍니다.')"><a href="javascript:void(0)">My page</a></li>
+        <li onClick="alert('회원가입 또는 로그인을 하신후 사용하시기 바랍니다.')"><a href="javascript:void(0)"><span class="material-symbols-outlined">favorite</span></a></li>
+        <li><a href="javascript:void(0)"><span class="material-symbols-outlined">shopping_bag</span></a></li>
+      </ul>
+      <div class="coupon">10% COUPON</div>
+    </div>
+
+  </div>
+
+
+  <header id="header">
+
+    <div class="inner">
+      
+      <h1><a href="/" title="컬럼비아 로고"></a></h1>
+
+      <div class="header_con">
+
+        <a href="javascript:void(0)" class="menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+
+
+        <nav>
+          
+          <div class="depth2">
+           
+            <div class="depth2_inner">
+           
+              <ul class="special">
+                <li><a href="javascript:void(0)">NEW<span class="material-symbols-outlined">chevron_right</span></a></li>
+                <li><a href="javascript:void(0)">BEST<span class="material-symbols-outlined">chevron_right</span></a></li>
+                <li><a href="javascript:void(0)">BLACK LABEL<span class="material-symbols-outlined">chevron_right</span></a></li>
+                <li><a href="javascript:void(0)">ICONS<span class="material-symbols-outlined">chevron_right</span></a></li>
+                <li><a href="javascript:void(0)">PFG<span class="material-symbols-outlined">chevron_right</span></a></li>
+              </ul>
+           
+              <ul class="depth3">
+                <li>
+                  <a href="javascript:void(0)">MEN</a>
+                  <ul class="sub">
+                    <li><a href="javascript:void(0)">Jacket</a></li>
+                    <li><a href="javascript:void(0)">Top</a></li>
+                    <li><a href="javascript:void(0)">Pants</a></li>
+                    <li><a href="javascript:void(0)">activity</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">WOMEN</a>
+                  <ul class="sub">
+                    <li><a href="javascript:void(0)">Jacket</a></li>
+                    <li><a href="javascript:void(0)">Top</a></li>
+                    <li><a href="javascript:void(0)">Pants</a></li>
+                    <li><a href="javascript:void(0)">activity</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">KIDS</a>
+                  <ul class="sub">
+                    <li><a href="javascript:void(0)">Jacket</a></li>
+                    <li><a href="javascript:void(0)">Top</a></li>
+                    <li><a href="javascript:void(0)">SetUp</a></li>
+                    <li><a href="javascript:void(0)">Pants</a></li>
+                    <li><a href="javascript:void(0)">Bag</a></li>
+                    <li><a href="javascript:void(0)">Cap</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">FOOTWEAR</a>
+                  <ul class="sub">
+                    <li><a href="javascript:void(0)">Hiking</a></li>
+                    <li><a href="javascript:void(0)">Trail Running</a></li>
+                    <li><a href="javascript:void(0)">Sneakers</a></li>
+                    <li><a href="javascript:void(0)">Sandals &#38; Slippers</a></li>
+                    <li><a href="javascript:void(0)">Collections</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">ACC</a>
+                  <ul class="sub">
+                    <li><a href="javascript:void(0)">Bag</a></li>
+                    <li><a href="javascript:void(0)">Cap</a></li>
+                    <li><a href="javascript:void(0)">Others</a></li>
+                    <li><a href="javascript:void(0)">Gloves</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">TECHNOLOGY</a>
+                  <ul class="sub">
+                    <li><a href="javascript:void(0)">Protected</a></li>
+                    <li><a href="javascript:void(0)">Dry</a></li>
+                    <li><a href="javascript:void(0)">Cool</a></li>
+                    <li><a href="javascript:void(0)">Warm</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Activity</a>
+                  <ul class="sub">
+                    <li><a href="javascript:void(0)">Fishing</a></li>
+                    <li><a href="javascript:void(0)">Hiking</a></li>
+                    <li><a href="javascript:void(0)">Casual &#38; Travel</a></li>
+                    <li><a href="javascript:void(0)">Trail Running</a></li>
+                  </ul>
+                </li>
+              </ul>
+            
+            </div>
+          
+          </div>
+  
+          <div class="gnb_dim-mo"></div>
+          <div class="gnb_con">
+            <ul class="gnb">
+              <li class="depth1"><a href="javascript:void(0)">Contact Us<span class="material-symbols-outlined mobile-only">chevron_right</span></a></li>
+              <li class="depth1"><a href="javascript:void(0)">Product<span class="material-symbols-outlined mobile-only">chevron_right</span></a></li>
+              <li class="depth1"><a href="../signin/signin.html">Login<span class="material-symbols-outlined mobile-only">chevron_right</span></a></li>
+              <li class="depth1"><a href="#">Join<span class="material-symbols-outlined mobile-only">chevron_right</span></a></li>
+              <li class="depth1"><a href="javascript:void(0)">Notice<span class="material-symbols-outlined mobile-only">chevron_right</span></a></li>
+              <li class="depth1"><a href="javascript:void(0)">FAQ<span class="material-symbols-outlined mobile-only">chevron_right</span></a></li>
+            </ul>
+            <div class="event-mo mobile-only">
+              <h4>Columbia Event</h4>
+              <div class="swiper-container">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide"><a href="javascript:void(0)"><img src="../images/event01_mo.png" alt="columbia black label 기획전" /></a></li>
+                  <li class="swiper-slide"><a href="javascript:void(0)"><img src="../images/event02_mo.png" alt="5월 금액 할인 혜택" /></a></li>
+                  <li class="swiper-slide"><a href="javascript:void(0)"><img src="../images/event03_mo.png" alt="set up styling 기획전" /></a></li>
+                  <li class="swiper-slide"><a href="javascript:void(0)"><img src="../images/event04_mo.png" alt="The columbia icon collection" style="object-position: left;"/></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          
+        </nav>
+        
+        
+        <div class="right_wrapper">
+ 
+          <div class="keyword-container">
+            <span class="key-tit">HOT KEYWORD</span>
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="javascript:void(0)"><strong>1.</strong> 등산화</a></div>
+                <div class="swiper-slide"><a href="javascript:void(0)"><strong>2.</strong> 바람막이</a></div>
+                <div class="swiper-slide"><a href="javascript:void(0)"><strong>3.</strong> 백팩</a></div>
+                <div class="swiper-slide"><a href="javascript:void(0)"><strong>4.</strong> 플리스</a></div>
+                <div class="swiper-slide"><a href="javascript:void(0)"><strong>5.</strong> 패딩</a></div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="search">
+            <div id="openSch"><a href="javascript:void(0)"><span class="material-symbols-outlined">search</span></a></div>
+            <div class="searchzone-container">
+              <div class="search_inner">
+                <div>
+                  <input type="text" placeholder="검색어를 입력해주세요." id="texts">
+                  <ul>
+                    <li><a href="javascript:void(0)"><span class="material-symbols-outlined">search</span></a></li>
+                    <li id="closeSch"><a href="javascript:void(0)"><span class="material-symbols-outlined">clear</span></a></li> 
+                  </ul>
+                </div>
+                <div>
+                  <section class="recent">
+                    <span class="search-tit">최근 검색어</span>
+                    <div>최근 검색어가 없습니다</div>
+                  </section>
+                  <section class="hot">
+                    <span class="search-tit">핫 키워드</span>
+                    <ul>
+                      <li class="fade-in"><a href="javascript:void(0)"><strong>1.</strong> 등산화</a></li>
+                      <li class="fade-in"><a href="javascript:void(0)"><strong>2.</strong> 바람막이</a></li>
+                      <li class="fade-in"><a href="javascript:void(0)"><strong>3.</strong> 백팩</a></li>
+                      <li class="fade-in"><a href="javascript:void(0)"><strong>4.</strong> 플리스</a></li>
+                      <li class="fade-in"><a href="javascript:void(0)"><strong>5.</strong> 패딩</a></li>
+                      <li class="fade-in"><a href="javascript:void(0)"><strong>6.</strong> 모자</a></li>
+                      <li class="fade-in"><a href="javascript:void(0)"><strong>7.</strong> 버킷햇</a></li>
+                      <li class="fade-in"><a href="javascript:void(0)"><strong>8.</strong> 팬츠</a></li>
+                    </ul>
+                  </section>
+                  <section class="rec">
+                    <span class="search-tit">추천 상품</span>
+                    <ul>
+                      <li>
+                        <div class="search-pic">
+                          <a href="javascript:void(0)"><img src="../images/rec_prod01.jpg" alt="[BLACK LABEL] Lamar Slope™ SS Tee" /></a>
+                        </div>
+                        <div class="search-desc">
+                          <span class="search-prod">[BLACK LABEL] Lamar Slope™ SS Tee</span>
+                          <span class="search-price">69,000원</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="search-pic">
+                          <a href="javascript:void(0)"><img src="../images/rec_prod02.jpg" alt="Bahama™ Short Sleeve Shirt" /></a>
+                        </div>
+                        <div class="search-desc">
+                          <span class="search-prod">Bahama™ Short Sleeve Shirt</span>
+                          <span class="search-price">45,000원</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="search-pic">
+                          <a href="javascript:void(0)"><img src="../images/rec_prod03.jpg" alt="Price Stream™ Pouch" /></a>
+                        </div>
+                        <div class="search-desc">
+                          <span class="search-prod">Price Stream™ Pouch</span>
+                          <span class="search-price">9,000원</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </section>
+                </div>
+              </div>  
+            </div>
+          </div>
+        
+        </div>
+      
+      </div>
+      
+    </div>
+  
+  </header>
+
+
+  <section class="signup">
+
+    <h5 class="kor">회원가입</h5>
+
+    <div class="inner">
+      
+      <h4>약관동의</h4>
+      <p class="desc">
+        Columbia의 서비스를 이용하기 위해 이용자는 <br class="mobile-only" /> 이용약관을 읽어보시고 동의하셔야 합니다. <br /> 
+        회원가입 즉시 서비스를 이용하실 수 있습니다. <br class="mobile-only" /> 아래의 이용 약관을 반드시 읽고 동의해 주십시오.
+      </p>
+
+      <form name="agreeForm">
+        <fieldset>
+          
+          <div class="agree-area--line">
+            
+            <div class="scroll-area">
+              
+              <div class="scroll-area__left">
+                <p class="agree__tit">이용약관</p>
+                <div class="box__scroll">
+                  <div>
+                    <strong>이용약관</strong><br><br>
+                    제1조. 목적<br>
+                    이 약관은 컬럼비아스포츠웨어코리아가 운영하는 웹사이트 www.columbiakorea.co.kr(이하 "사이트"이라 한다)에서 제공하는 인터넷관련 서비스(이하 "서비스" 라 한다)를 이용함에 있어 사이트와 이용자의 권리, 의무 및 책임사항을 규정함을 목적으로 한다.
+                    <br>
+                    <br>
+                    제2조. 정의<br>
+                    ① "사이트"란 컬럼비아스포츠웨어코리아가 재화 또는 용역을 이용자에게 제공하기 위하여 컴퓨터 등 정보통신설비를 이용하여 재화 등을 거래할 수 있도록 설정한 가상의 영업장을 말하며, 아울러 사이버몰을 운영하는 사업자의 의미로도 사용한다.<br>
+                    ② "이용자"란 "사이트"에 접속하여 이 약관에 따라 "사이트"가 제공하는 서비스를 받는 회원 및 비회원을 말한다.<br>
+                    ③ "회원"이라 함은 "사이트"에 회원등록을 한 자로서, "사이트"의 정보를 지속적으로 제공받으며, "사이트"가 제공하는 서비스를 계속적으로 이용할 수 있는 자를 말한다.<br>
+                    ④ "비회원"이라 함은 회원에 가입하지 않고 "사이트"가 제공하는 서비스를 이용하는 자를 말한다.
+                    <br>
+                    <br>
+                    제3조. 약관 등의 명시와 설명 및 개정<br>
+                    ① "사이트"는 이 약관의 내용과 상호 및 대표자 성명, 영업소 소재지 주소(소비자의 불만을 처리할 수 있는 곳의 주소를 포함), 전화번호, 모사전송번호, 전자우편주소, 사업자등록번호, 통신판매업신고번호, 개인정보관리책임자 등을 이용자가 알 수 있도록 사이트의 초기 서비스화면(전면)에 게시한다. 다만, 약관의 내용은 이용자가 연결화면을 통하여 볼 수 있도록 한다.<br>
+                    ② "사이트"는 이용자가 약관에 동의하기에 앞서 약관에 정하여져 있는 내용 중 청약철회, 배송책임, 환불조건 등과 같은 중요한 내용을 이용자가 이해할 수 있도록 별도의 연결화면 또는 팝업화면 등을 제공하여 이용자의 확인을 구하여야 한다.<br>
+                    ③ "사이트"는 「전자상거래 등에서의 소비자보호에 관한 법률」, 「약관의 규제에 관한 법률」, 「전자문서 및 전자거래기본법」, 「전자금융거래법」, 「전자서명법」, 「정보통신망 이용촉진 및 정보보호 등에 관한 법률」, 「방문판매 등에 관한 법률」, 「소비자기본법」 등 관련 법을 위배하지 않는 범위에서 이 약관을 개정할 수 있다.<br>
+                    ④ "사이트"가 약관을 개정할 경우에는 적용일자 및 개정사유를 명시하여 현행약관과 함께 사이트의 초기화면에 그 적용일자 7일 이전부터 적용일자 전일까지 공지한다. 다만, 이용자에게 불리하게 약관내용을 변경하는 경우에는 최소한 30일 이상의 사전 유예기간을 주고 공지한다. 이 경우 "사이트"는 개정 전 내용과 개정 후 내용을 명확하게 비교하여 이용자가 알기 쉽도록 표시한다.<br>
+                    ⑤ "사이트"가 약관을 개정할 경우에는 그 개정약관은 그 적용일자 이후에 체결되는 계약에만 적용되고 그 이전에 이미 체결된 계약에 대해서는 개정 전의 약관조항이 그대로 적용된다. 다만 이미 계약을 체결한 이용자 개정약관 조항의 적용을 받기를 원하는 뜻을 제3항에 의한 개정약관의 공지기간 내에 "사이트"에 송신하여 "사이트"의 동의를 받은 경우에는 개정약관 조항이 적용된다.<br>
+                    ⑥ 이 약관에서 정하지 아니한 사항과 이 약관의 해석에 관하여는 전자상거래 등에서의 소비자 보호에 관한 법률, 약관의 규제 등에 관한 법률, 공정거래위원회가 정하는 전자상거래 등에서의 소비자 보호지침 및 관계법령 또는 상관례에 따른다.
+                    <br>
+                    <br>
+                    제4조. 서비스의 제공 및 변경<br>
+                    ① "사이트"는 다음과 같은 업무를 수행한다.<br>
+                    1. 재화 또는 용역에 대한 정보 제공 및 구매계약의 체결<br>
+                    2. 구매계약이 체결된 재화 또는 용역의 배송<br>
+                    3. 다양한 정보 제공<br>
+                    4. 광고, 이벤트, 프로모션 등 상품 또는 용역과 관련한 다양한 판촉 행위<br>
+                    5. 기타 "사이트"가 정하는 업무<br>
+                    ② "사이트"는 재화의 품절 또는 기술적 사양의 변경 등의 경우에는 장차 체결되는 계약에 의해 제공할 재화 용역의 내용을 변경할 수 있다. 이 경우에는 변경된 재화 용역의 내용 및 제공일자를 명시하여 현재의 재화 용역의 내용을 게시한 곳에 즉시 공지한다.<br>
+                    ③ "사이트"가 제공하기로 이용자와 계약을 체결한 서비스의 내용을 재화 등의 품절 또는 기술적 사양의 변경 등의 사유로 변경할 경우에는 그 사유를 이용자에게 통지 가능한 주소로 즉시 통지 한다.<br>
+                    ④ 전항의 경우 "사이트"는 이로 인하여 이용자가 입은 손해를 배상한다. 다만, "사이트"가 고의 또는 과실이 없음을 입증하는 경우에는 그러하지 아니한다.
+                    <br>
+                    <br>
+                    제5조. 서비스의 중단<br>
+                    ① "사이트"는 컴퓨터 등 정보통신설비의 보수점검 교체 및 고장, 통신의 두절 등의 사유가 발생한 경우에는 서비스의 제공을 일시적으로 중단할 수 있다.<br>
+                    ② "사이트"는 제1항의 사유로 서비스의 제공이 일시적으로 중단됨으로 인하여 이용자 또는 제 3 자가 입은 손해에 대하여 배상한다. 단, "사이트"가 고의 또는 과실이 없음을 입증하는 경우에는 그러하지 아니한다.<br>
+                    ③ 사업 종목의 전환, 사업의 포기, 업체간의 통합 등의 이유로 서비스를 제공할 수 없게 되는 경우에는 "사이트"는 제 8 조에 정한 방법으로 이용자에게 통지하고 당초 "사이트"에서 제시한 조건에 따라 소비자에게 보상한다. 다만, "사이트"가 보상기준 등을 고지하지 아니한 경우에는 이용자들의 마일리지 또는 적립금 등을 "사이트"에서 통용되는 통화가치에 상응하는 현물 또는 현금으로 이용자에게 지급한다.
+                    <br>
+                    <br>
+                    제6조. 회원가입<br>
+                    ① 이용자는 "사이트"가 정한 가입 양식에 따라 회원정보를 기입한 후 이 약관에 동의한다는 의사표시를 함으로서 회원가입을 신청한다.<br>
+                    ② "사이트"는 제1항과 같이 회원으로 가입할 것을 신청한 이용자 중 다음 각호에 해당하지 않는 한 회원으로 등록한다.<br>
+                    1. 가입신청자가 이 약관 제7조제3항에 의하여 이전에 회원자격을 상실한 적이 있는 경우, 다만 제7조제3항에 의한 회원자격 상실 후 3년이 경과한 자로서 "몰"의 회원재가입 승낙을 얻은 경우에 예외로 한다.<br>
+                    2. 등록 내용에 허위, 기재누락, 오기가 있는 경우<br>
+                    3. 기타 회원으로 등록하는 것이 "사이트"의 기술상 현저히 지장이 있다고 판단되는 경우<br>
+                    ③ 회원가입계약의 성립시기는 "사이트"의 승낙이 회원에게 도달한 시점으로 한다.<br>
+                    ④ 회원은 제15조제1항에 의한 등록사항에 변경이 있는 경우, 상당한 기간 이내에 "사이트"에 대하여 회원정보 수정 등의 방법으로 그 변경사항을 알려야 한다.
+                    <br>
+                    <br>
+                    제7조. 회원 탈퇴 및 자격 상실 등<br>
+                    ① 회원은 "사이트"에 언제든지 탈퇴를 요청할 수 있으며 "사이트"는 즉시 회원탈퇴 처리한다.<br>
+                    ② 회원이 다음 각호의 사유에 해당하는 경우, "사이트"는 회원자격을 제한 및 정지시킬 수 있다.<br>
+                    1. 가입 신청 시에 허위 내용을 등록한 경우<br>
+                    2. "사이트"를 이용하여 구입한 재화 등의 대금, 기타 "사이트"이용에 관련하여 회원이 부담하는 채무를 기일에 지급하지 않는 경우<br>
+                    3. 다른 사람의 "사이트" 이용을 방해하거나 그 정보를 도용하는 등 전자상거래 질서를 위협하는 경우<br>
+                    4. "사이트"을 이용하여 법령 또는 이 약관이 금지하거나 공서양속에 반하는 행위를 하는 경우<br>
+                    ③ "사이트"가 회원 자격을 제한 정지 시킨 후, 동일한 행위가 2회 이상 반복되거나 30일 이내에 그 사유가 시정되지 아니하는 경우 "사이트"는 회원자격을 상실시킬 수 있다.<br>
+                    ④ "사이트"는 회원자격을 상실시키는 경우에는 회원등록을 말소한다. 이 경우 회원에게 이를 통지하고, 회원등록 말소 전에 최소한 30일 이상의 기간을 정하여 소명할 기회를 부여한다.
+                    <br>
+                    <br>
+                    제8조. 회원에 대한 통지<br>
+                    ① "사이트"는 회원에 대한 통지를 하는 경우, 회원이 "사이트"와 미리 약정하여 지정한 전자우편 주소로 할 수 있다.<br>
+                    ② "사이트"는 불특정다수 회원에 대한 통지의 경우 1주일이상 "사이트" 게시판에 게시함으로서 개별 통지에 갈음할 수 있다. 다만, 회원 본인의 거래와 관련하여 중대한 영향을 미치는 사항에 대하여는 개별통지를 한다.
+                    <br>
+                    <br>
+                    제9조. 구매신청<br>
+                    "사이트" 이용자는 "사이트" 상에서 다음 또는 이와 유사한 방법에 의하여 구매를 신청하며, "사이트"는 이용자가 구매신청을 함에 있어서 다음의 각 내용을 알기 쉽게 제공하여야 한다.<br>
+                    1. 재화 등의 검색 및 선택<br>
+                    2. 받는 사람의 성명, 주소, 전화번호, 전자우편주소(또는 이동전화번호) 등의 입력<br>
+                    3. 약관내용, 청약 철회권이 제한되는 서비스, 배송료, 설치비 등의 비용부담과 관련된 내용에 대한 확인<br>
+                    4. 이 약관에 동의하고 위 3호의 사항을 확인하거나 거부하는 표시(예 마우스 클릭)<br>
+                    5. 재화 등의 구매신청 및 이에 관한 확인 또는 "사이트"의 확인에 대한 동의<br>
+                    6. 결제방법의 선택
+                    <br>
+                    <br>
+                    제10조. 계약의 성립<br>
+                    ① "사이트"는 제9조와 같은 구매신청에 대하여 다음 각호에 해당하면 승낙하지 않을 수 있다. 다만, 미성년자와 계약을 체결하는 경우에는 법정대리인의 동의를 얻지 못하면 미성년자 본인 또는 법정대리인이 계약을 취소할 수 있다는 내용을 고지하여야 한다.<br>
+                    1. 신청 내용에 허위, 기재누락, 오기가 있는 경우<br>
+                    2. 미성년자가 담배, 주류 등 청소년보호법에서 금지하는 재화 및 용역을 구매하는 경우<br>
+                    3. 기타 구매신청에 승낙하는 것이 "사이트" 기술상 현저히 지장이 있다고 판단하는 경우<br>
+                    ② "사이트"의 승낙이 제12조 제1항의 수신확인통지형태로 이용자에게 도달한 시점에 계약이 성립한 것으로 본다.<br>
+                    ③ "사이트"의 승낙의 의사표시에는 이용자의 구매 신청에 대한 확인 및 판매가능 여부, 구매신청의 정정 취소 등에 관한 정보 등을 포함하여야 한다.
+                    <br>
+                    <br>
+                    제11조. 지급방법<br>
+                    "사이트"에서 구매한 재화 또는 용역에 대한 대금지급방법은 다음 각호의 방법 중 가용한 방법으로 할 수 있다. 단, "사이트"은 이용자의 지급방법에 대하여 재화 등의 대금에 어떠한 명목의 수수료도 추가하여 징수할 수 없다.<br>
+                    1. 폰뱅킹, 인터넷뱅킹, 메일 뱅킹 등의 각종 계좌이체<br>
+                    2. 선불카드, 직불카드, 신용카드 등의 각종 카드 결제<br>
+                    3. 온라인무통장입금<br>
+                    4. 마일리지 등 "사이트"가 지급한 포인트에 의한 결제<br>
+                    5. "사이트"와 계약을 맺었거나 "사이트"가 인정한 상품권에 의한 결제<br>
+                    6. 기타 전자적 지급 방법에 의한 대금 지급 등
+                    <br>
+                    <br>
+                    제12조. 포인트 제도의 운영 <br>
+                    구매 금액 정상 상품에 한하여 5%, 21~30% 할인 제품 구매 시 3% 포인트 적립되고 배송상태가 완료될 때 자동으로 적립됩니다. . (이벤트나 프로모션기간 중에는 적립율이 변동될 수 있습니다.)<br>
+                    적립금은 "몰"에서만 사용이 가능하며, 주문 시 현금처럼 사용하실 수 있습니다.<br>
+                    적립금은 현금으로는 환불 받으실 수 없습니다.<br>
+                    환불시에는 적립금이 차감되며, 교환시에는 상계 처리 됩니다.<br>
+                    상품평 작성 시 포인트를 지급해 드립니다.<br>
+                    일반 상품평 작성 시 200포인트, 이미지 상품평 작성시 500 포인트 적립<br>
+                    포인트는 적립된 일자기준으로 1년동안 사용하실 수 있으며, 1년 뒤에는 자동으로 소멸됩니다.<br>
+                    EX) 2018년 8월 10일 적립된 포인트는 2019년 8월 10일 소멸<br>
+                    회원을 탈퇴하는 경우 적립금은 자동 소멸되어, 재가입하여도 적립금은 환급되지 않습니다.
+                    <br>
+                    <br>
+                    제13조. 수신확인통지 구매신청 변경 및 취소<br>
+                    ① "사이트"는 이용자의 구매신청이 있는 경우 이용자에게 수신확인통지를 한다.<br>
+                    ② 수신확인통지를 받은 이용자는 의사표시의 불일치 등이 있는 경우에는 수신확인통지를 받은 후 즉시 구매신청 변경 및 취소를 요청할 수 있고 "사이트"는 배송 전에 이용자의 요청이 있는 경우에는 지체 없이 그 요청에 따라 처리하여야 한다. 다만 이미 대금을 지불한 경우에는 제15조의 청약철회 등에 관한 규정에 따른다.
+                    <br>
+                    <br>
+                    제14조. 재화 등의 공급<br>
+                    ① "사이트"는 이용자와 재화 등의 공급시기에 관하여 별도의 약정이 없는 이상, 이용자가 청약을 한 날부터 7일 이내에 재화 등을 배송할 수 있도록 주문제작, 포장 등 기타의 필요한 조치를 취한다. 다만, "사이트"가 이미 재화 등의 대금의 전부 또는 일부를 받은 경우에는 대금의 전부 또는 일부를 받은 날부터 3영업일 이내에 조치를 취한다. 이때 "사이트"는 이용자가 재화 등의 공급 절차 및 진행 사항을 확인할 수 있도록 적절한 조치를 한다.<br>
+                    ② "사이트"는 이용자가 구매한 재화에 대해 배송수단, 수단별 배송비용 부담자, 수단별 배송기간 등을 명시한다. 만약 "사이트"가 약정 배송기간을 초과한 경우에는 그로 인한 이용자의 손해를 배상하여야 한다. 다만 "사이트"가 고의 과실이 없음을 입증한 경우에는 그러하지 아니한다.
+                    <br>
+                    <br>
+                    제15조. 환급<br>
+                    "사이트"는 이용자가 구매 신청한 재화 등이 품절 등의 사유로 인도 또는 제공을 할 수 없을 때에는 지체 없이 그 사유를 이용자에게 통지하고 사전에 재화 등의 대금을 받은 경우에는 대금을 받은 날부터 3영업일 이내에 환급하거나 환급에 필요한 조치를 취한다.
+                    <br>
+                    <br>
+                    제16조. 청약철회 등<br>
+                    ① "사이트"와 재화 등의 구매에 관한 계약을 체결한 이용자는 「전자상거래 등에서의 소비자보호에 관한 법률」 제13조 제2항(변경 확인 필요)에 따른 계약내용에 관한 서면을 받은 날(그 서면을 받은 때보다 재화 등의 공급이 늦게 이루어진 경우에는 재화 등을 공급받거나 재화 등의 공급이 시작된 날을 말합니다)부터 7일 이내에는 청약의 철회를 할 수 있습니다. 다만, 청약철회에 관하여 「전자상거래 등에서의 소비자보호에 관한 법률」에 달리 정함이 있는 경우에는 동 법 규정에 따른다.<br>
+                    ② 이용자는 재화 등을 배송 받은 경우 다음 각호의 1에 해당하는 경우에는 반품 및 교환을 할 수 없다.<br>
+                    1. 이용자의 책임 있는 사유로 재화 등이 멸실 또는 훼손된 경우 (다만, 재화 등의 내용을 확인하기 위하여 포장 등을 훼손한 경우에는 청약철회를 할 수 있다.)<br>
+                    2. 이용자의 사용 또는 일부 소비에 의하여 재화 등의 가치가 현저히 감소한 경우<br>
+                    3. 시간의 경과에 의하여 재판매가 곤란할 정도로 재화 등의 가치가 현저히 감소한 경우<br>
+                    4. 같은 성능을 지닌 재화 등으로 복제가 가능한 경우 그 원본인 재화 등의 포장을 훼손한 경우<br>
+                    ③ 제 2 항 제 2 호 내지 제 4 호의 경우에 "사이트"가 사전에 청약철회 등이 제한되는 사실을 소비자가 쉽게 알 수 있는 곳에 명기하거나 시용상품을 제공하는 등의 조치를 하지 않았다면 이용자의 청약철회 등이 제한되지 않는다.<br>
+                    ④ 이용자는 제 1 항 및 제 2 항의 규정에 불구하고 재화 등의 내용이 표시 광고 내용과 다르거나 계약내용과 다르게 이행된 때에는 당해 재화 등을 공급받은 날부터 3월 이내, 그 사실을 안 날 또는 알 수 있었던 날부터 30일 이내에 청약철회 등을 할 수 있다.
+                    <br>
+                    <br>
+                    제17조. 청약철회 등의 효과<br>
+                    ① "사이트"는 이용자로부터 재화 등을 반환 받은 경우 3영업일 이내에 이미 지급받은 재화 등의 대금을 환급한다. 이 경우 "사이트"가 이용자에게 재화 등의 환급을 지연한 때에는 그 지연기간에 대하여 「전자상거래 등에서의 소비자보호에 관한 법률 시행령」제21조의2에서 정하는 지연이자율을 곱하여 산정한 지연이자를 지급한다.<br>
+                    ② "사이트"는 위 대금을 환급함에 있어서 이용자가 신용카드 또는 전자화폐 등의 결제수단으로 재화 등의 대금을 지급한 때에는 지체 없이 당해 결제수단을 제공한 사업자로 하여금 재화 등의 대금의 청구를 정지 또는 취소하도록 요청한다.<br>
+                    ③ 청약철회 등의 경우 공급받은 재화 등의 반환에 필요한 비용은 이용자가 부담한다. "사이트"는 이용자에게 청약철회 등을 이유로 위약금 또는 손해배상을 청구하지 않는다. 다만 재화 등의 내용이 표시 광고 내용과 다르거나 계약내용과 다르게 이행되어 청약철회 등을 하는 경우 재화 등의 반환에 필요한 비용은 "사이트"가 부담한다.<br>
+                    ④ 이용자가 재화 등을 제공받을 때 발송비를 부담한 경우에 "사이트"은 청약철회 시 그 비용을 누가 부담하는지를 이용자가 알기 쉽도록 명확하게 표시한다.
+                    <br>
+                    <br>
+                    제18조. 개인정보보호<br>
+                    ① "사이트"는 이용자의 정보수집 시 구매계약 이행에 필요한 최소한의 정보를 수집한다. 다음 사항을 필수사항으로 하며 그 외 사항은 선택사항으로 한다.<br>
+                    1. 성명<br>
+                    2. 생년월일<br>
+                    3. 전화번호<br>
+                    4. 희망ID(회원의 경우)<br>
+                    5. 비밀번호(회원의 경우)<br>
+                    6. 전자우편주소(또는 이동전화번호)<br>
+                    ② "사이트"가 이용자의 개인정보를 수집•이용하는 때에는 당해 이용자에게 그 목적을 고지하고 동의를 받는다.<br>
+                    ③ "사이트"는 수집된 개인정보를 목적외의 용도로 이용할 수 없으며, 새로운 이용목적이 발생한 경우 또는 제3자 (제휴사를 포함함)에게 제공하는 경우에는 이용•제공단계에서 당해 이용자에게 그 목적을 고지하고 동의를 받는다. 다만, 관련 법령에 달리 정함이 있는 경우 및 다음의 경우에는 예외로 한다.<br>
+                    1. 배송업무상 배송업체에게 배송에 필요한 최소한의 이용자의 정보(성명, 주소, 전화번호)를 알려주는 경우<br>
+                    2. 정보통신서비스의 제공에 관한 계약의 이행을 위하여 필요한 개인정보로서 경제적, 기술적인 사유로 통상의 동의를 받는 것이 현저히 곤란한 경우<br>
+                    3. 정보통신서비스(전자상거래 등)의 제공에 따른 요금정산을 위하여 필요한 경우<br>
+                    4. 법률의 규정 또는 법률에 의하여 필요한 불가피한 사유가 있는 경우<br>
+                    ④ "사이트"가 제 2 항과 제 3 항에 의해 이용자의 동의를 받아야 하는 경우에는 개인정보관리 책임자의 신원(소속 및 전화번호 기타 연락처), 정보의 수집 목적 및 이용목적, 제3자에 대한 정보제공 관련사항(제공 받는자, 제공목적 및 제공할 정보의 내용)등「정보통신망 이용촉진 및 정보보호 등에 관한 법률」 제 22 조 제 2 항이 규정한 사항을 미리 명시하거나 고지해야 하며 이용자는 언제든지 이 동의를 철회할 수 있다.<br>
+                    ⑤ 이용자는 언제든지 "사이트"가 가지고 있는 자신의 개인정보에 대해 열람 및 오류정정을 요구할 수 있으며 "사이트"는 이에 대해 지체 없이 필요한 조치를 취할 의무를 진다. 이용자가 오류의 정정을 요구한 경우에는 "사이트"는 그 오류를 정정할 때까지 당해 개인정보를 이용하지 않는다.<br>
+                    ⑥ "사이트"는 개인정보 보호를 위하여 이용자의 개인정보를 취급하는 자를 최소한으로 제한하여야 하며 신용카드, 은행계좌 등을 포함한 이용자의 개인정보의 분실, 도난, 유출, 동의 없는 제3자 제공, 변조 등으로 인한 이용자의 손해에 대하여 모든 책임을 진다.<br>
+                    ⑦ "사이트" 또는 그로부터 개인정보를 제공받은 제3자는 개인정보의 수집목적 또는 제공받은 목적을 달성한 때에는 당해 개인정보를 지체 없이 파기한다.<br>
+                    ⑧ "사이트" 는 「정보통신망 이용촉진 및 정보보호 등에 관한 법률」 제29조 및 시행령 제16조에 따라 휴면회원(최근 12개월 동안 서비스를 이용하지 아니하였거나 고객이 선택한 해당 기간 동안 이용하지 아니한 회원)에 대해 이용 중지 30일 이전에 서비스 이용 중지 가능에 대하여 통지하고, 안내문에서 정한 기한 내에 답변이 없을 경우 고객님의 서비스 이용을 불가 시킬 수 있습니다. 이 경우, 회원 아이디를 포함한 휴면회원의 개인정보 및 서비스 이용정보는 파기되거나 별도로 분리되어 보관되며, 고객님의 재 이용 요청 시 재수집 또는 분리보관된 정보를 복구하여 고객님의 서비스 이용을 지원합니다.
+                    <br>
+                    <br>
+                    제19조. "사이트"의 의무<br>
+                    ① "사이트"는 법령과 이 약관이 금지하거나 미풍양속에 반하는 행위를 하지 않으며 이 약관이 정하는 바에 따라 지속적이고, 안정적으로 재화 용역을 제공하는 데 최선을 다한다.<br>
+                    ② "사이트"는 이용자가 안전하게 인터넷 서비스를 이용할 수 있도록 이용자의 개인정보(신용정보 포함) 보호를 위한 최소한의 보안 시스템을 갖추어야 한다.<br>
+                    ③ "사이트"가 상품이나 용역에 대하여 「표시광고의공정화에관한법률」제3조 소정의 부당한 표시 광고행위함으로써 이용자가 손해를 입은 때에는 이를 배상할 책임을 진다.<br>
+                    ④ "사이트"는 이용자가 원하지 않는 영리목적의 광고성 전자우편을 발송하지 않는다.
+                    <br>
+                    <br>
+                    제20조. 회원의 ID 및 비밀번호에 대한 의무<br>
+                    ① 제 18 조의 경우를 제외한 ID와 비밀번호에 관한 관리책임은 회원에게 있다.<br>
+                    ② 회원은 자신의 ID 및 비밀번호를 제3자에게 이용하게 해서는 안 된다.<br>
+                    ③ 회원이 자신의 ID 및 비밀번호를 도난 당하거나 제3자가 사용하고 있음을 인지한 경우에는 바로 "사이트"에 통보하고 "사이트"의 안내가 있는 경우에는 그에 따라야 한다.
+                    <br>
+                    <br>
+                    제21조. 이용자의 의무<br>
+                    이용자는 다음 행위를 하여서는 안 된다.<br>
+                    1. 신청 또는 변경 시 허위 내용의 등록<br>
+                    2. 타인의 정보 도용<br>
+                    3. "사이트"에 게시된 정보의 변경<br>
+                    4. "사이트"가 정한 정보 이외의 정보(컴퓨터 프로그램 등) 등의 송신 또는 게시<br>
+                    5. "사이트"및 기타 제3자의 저작권 등 지적재산권에 대한 침해<br>
+                    6. "사이트"및 기타 제3자의 명예를 손상시키거나 업무를 방해하는 행위<br>
+                    7. 외설 또는 폭력적인 메시지, 화상, 음성, 기타 공서양속에 반하는 정보를 "사이트"에 공개 또는 게시하는 행위 또는 게시하는 행위
+                    <br>
+                    <br>
+                    제22조. "사이트"의 연결<br>
+                    ① "사이트"는 타 사이트에 하이퍼링크(하이퍼링크의 대상에는 문자, 그림 및 동화상 등이 포함됨)방식 등에 의해 연결시킬 수 있습니다.<br>
+                    ② ˝사이트˝는 이용자가 해당 연결사이트와 독자적으로 상품 또는 용역을 거래한 행위에 대해서는 아무런 책임을 부담하지 않습니다.
+                    <br>
+                    <br>
+                    제23조. 저작권의 귀속 및 이용제한<br>
+                    ① "사이트"가 작성한 저작물에 대한 저작권 기타 지적재산권은 "사이트"에 귀속한다.<br>
+                    ② 이용자는 "사이트"를 이용함으로써 얻은 정보 중 "사이트"에게 지적재산권이 귀속된 정보를 "사이트"의 사전 승낙 없이 복제, 송신, 출판, 배포, 방송 기타 방법에 의하여 영리목적으로 이용하거나 제 3 자에게 이용하게 하여서는 안 된다.<br>
+                    ③ "사이트"는 약정에 따라 이용자에게 귀속된 저작권을 사용하는 경우 당해 이용자에게 통보하여야 한다.
+                    <br>
+                    <br>
+                    제24조. 분쟁해결<br>
+                    ① "사이트"는 이용자가 제기하는 정당한 의견이나 불만을 반영하고 그 피해를 보상처리하기 위하여 피해보상 처리기구를 설치 운영한다.<br>
+                    ② "사이트"는 이용자로부터 제출되는 불만사항 및 의견을 우선적으로 처리한다. 다만, 신속한 처리가 곤란한 경우에는 이용자에게 그 사유와 처리일정을 즉시 통보한다.<br>
+                    ③ "사이트"와 이용자간에 발생한 전자상거래 분쟁과 관련하여 이용자의 피해구제신청이 있는 경우에는 공정거래위원회 또는 시도지사가 의뢰하는 분쟁조정기관의 조정에 따를 수 있다.
+                    <br>
+                    <br>
+                    제25조. 재판권 및 준거법<br>
+                    ① "사이트"와 이용자간에 발생한 전자상거래 분쟁에 관한 소송은 제소 당시의 이용자의 주소에 의하고, 주소가 없는 경우에는 거소를 관할하는 지방법원의 전속관할로 한다. 다만, 제소 당시 이용자의 주소 또는 거소가 분명하지 않거나 외국 거주자의 경우에는 민사소송법상의 관할법원에 제기한다.<br>
+                    ② "사이트"와 이용자간에 제기된 전자상거래 소송에는 한국법을 적용한다.
+                    <br>
+                    <br>
+                    [부칙]<br>
+                    제1조 (시행일) 이 약관은 2015년 8월 20일부터 적용됩니다.<br>
+                    [부칙]<br>
+                    제1조 (시행일) 이 약관은 2018년 8월 06일부터 시행 합니다. 
+                  </div>
+                </div>
+                <div class="radio-area">
+                  <span>위의 “이용약관”에 동의합니다. (필수)</span>
+                  <div class="radio-btn">
+                    <input type="radio" name="agree" id="agree1" value="1"><label for="agree1">동의함</label>
+                    <input type="radio" name="agree" id="agree2" value="0" checked=""><label for="agree2">동의하지 않음</label>           
+                  </div>
+                </div>
+              </div>
+              
+              <div class="scroll-area__right">
+                <p class="agree__tit">개인정보수집 이용안내</p>
+                <div class="box__scroll">
+                  <div>
+                    <strong>개인정보수집 및 활용에 대한 동의</strong><br><br>
+                    컬럼비아 공식 온라인 스토어는 고객의 개인정보보호를 소중하게 생각하고, 고객의 개인정보를 보호하기 위하여
+                    항상 최선을 다해 노력하고 있습니다. <br>
+                    컬럼비아 공식 스토어는 「정보통신망 이용촉진 및 정보보호 등에 관한
+                    법률」을 비롯한 모든 개인정보보호 관련 법률규정 및 정보통신부가 제정한 「이동통신서비스제공자의
+                    개인정보 보호지침」을 준수하고 있습니다. <br><br>
+                    1. 수집하는 개인정보의 항목 및 수집방법 및 이용목적<br>
+                      1) 본 약관의 주요 용어는 아래와 같이 정의합니다.<br>
+                    ① 컬럼비아 공식 스토어는 컬럼비아스포츠웨어코리아 가 운영하는 공식 온라인 쇼핑몰을 말합니다.<br>
+                    ② "서비스"란 컬럼비아스포츠웨어코리아 스토어 사이트 및 사이트 관련 각종 서비스를 말합니다.<br>
+                    ③ "이용자"란 "사이트"에 접속하여 이 약관에 따라 "컬럼비아 공식 스토어"가 제공하는 "서비스"를
+                    받는 "회원"과 비회원을 말합니다.<br>
+                    ④ "회원"은 "컬럼비아 공식 스토어"에 개인 정보를 제공하여 회원 등록을 한 자로서, 회원 전용
+                    "서비스"를 이용할 수 있는 자를 말합니다.<br>
+                    ⑤ "비회원"이라 함은 회원에 가입하지 않고 "서비스"를 이용하는 자를 말합니다.<br><br>
+                    2) 개인정보 수집 항목은 다음과 같습니다.<br>
+                    <table class="table__etc mb0">
+                      <caption class="hidden">수집항목 수집 및 이용목적 테이블</caption>
+                      <tbody>
+                        <tr>
+                          <td class="tal">
+                          성명, 전화번호, 핸드폰번호, 생년월일,
+                          성별, 아이디, 비밀번호, 주소
+                          </td>
+                          <td class="tal">
+                          1. 서비스 이용에 따른 본인식별<br>
+                          2. 상품 주문, 접수, 배송 및 제반 정보(쿠폰, 이벤트
+                          등)를 제공<br>
+                          3. 기타 원활한 양질의 서비스 제공,
+                          "서비스"의 방문 traffic의 분석 및 "서비스"의 이용
+                          행태 파악
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="tal">이메일,전화번호,주소</td>
+                          <td class="tal">
+                          1. 고지사항 전달, 본인 의사 확인, 불만 처리 등 원활한
+                          의사소통 경로의 확보, 새로운 서비스/신상품이나
+                          이벤트 정보의 안내
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="tal">주소, 전화번호</td>
+                          <td class="tal">
+                          1. 청구서, 경품과 쇼핑 물품 배송에 대한 정확한
+                          배송지의 확보
+                        </td>
+                        </tr>
+                        <tr>
+                          <td class="tal">생년월일, 성별, 전화번호, 주소</td>
+                          <td class="tal">1. 인구통계학적 분석 자료(이용장의 연령별, 성별,</td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    지역별 통계분석)<br>
+
+                    3) 이 약관에서 정하지 아니한 내용과 이 약관의 해석에 관하여는 전자상거래 등에서의 소비자 보호에
+                    관한 법률, 약관의규제 등에 관한 법률, 공정거래위원회가 정하는 전자상거래 등에서의 소비자보호 지침 및
+                    관계법령 또는 상관례에 따릅니다.<br><br>
+                    2. 개인정보의 보유 및 이용기간<br>
+                    "컬럼비아 공식 스토어"가 회원님의 개인정보를 수집하는 경우 그 보유기간은 회원가입 하신 후 해지 (탈퇴신청,
+                    직권탈퇴 포함)시까지 입니다. 또한 해지 시 "컬럼비아 공식 스토어"는 회원님의 개인정보를 즉시 파기하며
+                    개인정보가 제3자에게 제공된 경우에는 제3자에게도 파기하도록 지시합니다. 단, 다음의 정보에 대해서는
+                    아래의 이유로 명시한 기간 동안 보존합니다.<br>
+                    ① 보존 항목 : 고객 정보, 서비스 이용기록, 결제기록, 접속 IP 정보<br>
+
+                    ② 보존 근거 : 고객님의 탈퇴기록 및 수사기관 협조 등에 이용하기 위하여 보존함<br>
+                    ③ 보존 기간 : 3개월<br>
+                    관계법령의 규정에 의하여 보존할 필요가 있는 경우 "컬럼비아 공식 스토어"는 아래와 같이 관계법령에서 정한
+                    일정한 기간 동안 회원정보를 보관합니다.<br>
+                    ① 계약 또는 청약철회 등에 관한 기록 : 5년 (전자상거래등에서의 소비자보호에 관한 법률)<br>
+                    ② 대금결제 및 재화 등의 공급에 관한 기록 : 5년 (전자상거래등에서의 소비자보호에 관한 법률)<br>
+                    ③ 소비자의 불만 또는 분쟁처리에 관한 기록 : 3년 (전자상거래등에서의 소비자보호에 관한 법률)<br>
+                    ④ 본인 확인에 관한 기록 : 6개월 (정보통신 이용촉진 및 정보보호 등에 관한 법률)<br>
+                    ⑤ 방문에 관한 기록 : 3개월(통신비밀보호법)<br>
+                    - 귀하에게 미리 고지하고 그 보유기간이 경과하지 아니한 경우와 개별적으로 귀하의 동의를 받은 경우에는
+                    약속한 보유기간까지 보유 합니다.<br>
+                    - 회원가입을 탈퇴한 경우에는 불/편법 행위 차단 등의 목적으로 회원 탈퇴 후 1개월 동안 회원의 성명, 아이디,
+                    비밀번호, 이메일 식별정보를 보관합니다.
+                  </div>
+                </div>
+                <div class="radio-area">
+                  <span>위의 “개인정보 수집 활용안내”에 동의합니다. (필수)</span>
+                  <div class="radio-btn">
+                    <input type="radio" name="privacy" id="privacy1" value="1"><label for="privacy1">동의함</label>
+                    <input type="radio" name="privacy" id="privacy2" value="0" checked=""><label for="privacy2">동의하지 않음</label>           
+                  </div>
+                </div>
+              </div>
+            
+            </div>
+            
+            <div class="box__info__agree">
+              <p class="agree__tit">마케팅 및 광고 활용 동의</p>
+              <div class="list__etc">
+                <ul>
+                  <li>
+                    <div class="list__tit">개인정보 수집 목적</div>
+                    <div class="list__desc">이벤트, 신제품 정보, 쿠폰, <br class="mobile-only" /> 및 광고성 뉴스레터 발송</div>
+                  </li>
+                  <li>
+                    <div class="list__tit">개인정보 수집 항목</div>
+                    <div class="list__desc">성명, 휴대전화번호, 이메일 주소, 주소</div>
+                  </li>
+                  <li>
+                    <div class="list__tit">개인정보 보유, 이용기간</div>
+                    <div class="list__desc">수신동의 철회 접수 또는 회원탈퇴 시 까지</div>
+                  </li>
+                </ul>
+              </div>
+              <p class="agree__subtit">귀하는 개인정보 수집, 이용에 동의하지 않을 권리가 있으며, 동의를 거부할 경우에는 이벤트, 신제품 정보, 쿠폰 및 광고에 대한 제공의 서비스 이용에 제한 될 수 있습니다.</p>
+              <div class="radio-area">
+                <span>위 마케팅 및 광고 활용 이용에 동의합니다. (선택) </span>
+                <div class="radio-btn">
+                  <input type="radio" name="ad" id="ad1" value="1"><label for="ad1">동의함</label>
+                  <input type="radio" name="ad" id="ad2" value="0"><label for="ad2">동의하지 않음</label>          
+                </div>
+              </div>
+            </div>
+
+          </div>
+          
+          <div class="box__info__agree--bg">
+            <div class="check-box2">
+              <input type="checkbox" id="checkALL" name="checkALL">
+              <label for="checkALL"> 위의 모든 약관에 동의합니다.</label>
+            </div>
+          </div>
+
+          <div class="caution--center">
+            <p>Columbia는 깨끗한 인터넷 환경을 위하여 <br class="mobile-only" /> 본인인증 방식을 휴대폰인증을 통하여 <br class="mobile-only" /> 회원 가입을 받고 있습니다.</p>
+          </div>
+        
+          <button class="primary" type="button"><a href="javascript:void(0)">휴대폰 인증</a></button>
+      
+        </fieldset>
+			</form>
+
+    </div>
+
+  </section>
+
+
+  <footer>
+
+    <div class="inner">
+   
+      <div class="f_top">
+   
+        <div class="left">
+          <ul class="low">
+            <li><a href="javascript:void(0)">About Us</a></li>
+            <li><a href="javascript:void(0)">이용약관</a></li>
+            <li><a href="javascript:void(0)"><strong>개인정보처리방침</strong></a></li>
+            <li><a href="javascript:void(0)">이용안내</a></li>
+            <li><a href="javascript:void(0)">대리점 개설문의</a></li>
+          </ul>
+          <div class="cs">
+            <ul class="offline">
+              <li class="cs-tit"><strong>컬럼비아 대표번호</strong><br /> 매장고객 및 AS문의</li>
+              <li class="cs-tel"><a href="javascript:void(0)">080-540-0277</a></li>
+              <li class="cs-day">평일 09:30 ~ 17:30</li>
+            </ul>
+            <ul class="online">
+              <li class="cs-tit"><strong>온라인 스토어 고객센터</strong><br /> 온라인몰 고객 문의</li>
+              <li class="cs-tel"><a href="javascript:void(0)">1800-1784</a></li>
+              <li class="cs-day">평일 10:00 ~ 17:00</li>
+            </ul>
+          </div>
+        </div>  
+   
+        <div class="right">
+          <ul class="sns">
+            <li><a href="javascript:void(0)"><img src="../images/ico_instagram.png" alt="인스타그램" /></a></li>
+            <li><a href="javascript:void(0)"><img src="../images/ico_facebook.png" alt="페이스북" /></a></li>
+            <li><a href="javascript:void(0)"><img src="../images/ico_youtube.png" alt="유튜브" /></a></li>
+            <li><a href="javascript:void(0)"><img src="../images/ico_kakao.png" alt="카카오톡 채널추가"></a></li>
+          </ul>
+          <button class="reverse"><a href="javascript:void(0)">International Site</a><span class="material-symbols-outlined">chevron_right</span></button>
+        </div>
+   
+      </div>
+   
+      <div class="f_bottom">
+       
+        <div class="f_logo">
+          <img src="../images/f_logo_gr.png" alt="컬럼비아 하단 로고" />
+          <span class="material-symbols-outlined mobile-only">expand_more</span>
+        </div>
+       
+        <address>
+          <ul>
+            <li>컬럼비아스포츠웨어코리아 대표이사: 배정원</li>
+            <li>서울특별시 동대문구 천호대로 429, 7~10층</li>
+            <li><a href="javascript:void(0)">사업자등록번호: 120-81-63458</a></li>
+            <li>통신판매신고번호: 2013-서울동대문-0848</li>
+            <li>개인정보 보호책임자: 전기석</li>
+            <li><a href="javascript:void(0)">E-mail: kr-mall@columbia.com</a></li>
+          </ul>
+          <div class="copy">
+            <p>COPYRIGHT 2022 &copy; Columbia Sportswear Company. ALL RIGHTS RESERVED</p>
+          </div>
+        </address>
+       
+        <div class="inicis pc-only"><a href="javascript:void(0)"><img src="../images/inicis.png" alt="이니시스" /></a></div>
+      
+      </div>
+    
+    </div>
+  
+  </footer>
+
+
+  <div id="to-top">
+    <span class="material-symbols-outlined">vertical_align_top</span>
+  </div>
+
+
+</body>
+
+
+</html>

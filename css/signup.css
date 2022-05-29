@@ -1,0 +1,139 @@
+/* MOBILE */
+input {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 1.4rem;
+  outline: none;
+  background: transparent;
+  padding-left: 10px;
+  border: none;
+}
+
+.hidden { display: none; }
+
+.signup {
+  padding: 120px 5% 3rem;
+  overflow: hidden;
+}
+
+.signup .desc {
+  text-align: center;
+  color: #828282;
+}
+
+.signup .inner { padding: 2rem 0 0; }
+
+.signup input {
+  font-size: 1rem;
+  padding: 6px 12px;
+}
+
+.signup button {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 1px solid #007ab9;
+  color: #007ab9;
+  text-align: center;
+}
+
+.signup form { padding: 2rem 0; }
+
+.signup form .agree__tit {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.signup form .scroll-area> div { margin: 2rem 0; }
+
+.signup form .scroll-area .box__scroll {
+  height: 300px;
+  overflow-y: scroll;
+  border: 1px solid #333;
+  padding: 1rem 5%;
+  background: rgb(250, 250, 250);
+}
+
+.signup form .radio-area {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.signup form .radio-area .radio-btn { margin: 1rem 0; }
+
+.signup form .box__info__agree .list__etc {
+  border: 1px solid #333;
+  background: rgb(250, 250, 250);
+  margin-bottom: 1rem;
+}
+
+.signup form .box__info__agree .list__etc .list__tit { font-weight: 600; }
+
+.signup form .box__info__agree .list__etc .list__desc {
+  font-size: 0.9rem;
+  color: #828282;
+}
+
+.signup form .box__info__agree .list__etc ul li { padding: 10px 5%; }
+
+.signup form .box__info__agree .list__etc ul li:not(:last-child) { border-bottom: 1px solid #333; }
+
+.signup form .box__info__agree .agree__subtit { font-size: 0.8rem; }
+
+.signup form .box__info__agree--bg {
+  background: #eee;
+  padding: 1rem 5%;
+  text-align: center;
+}
+
+.signup form .caution--center {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.signup form button.primary { max-width: 480px; }
+
+
+/* LAPTOP */
+
+@media screen and (min-width: 1200px) {
+
+
+  .signup { padding: 200px 0 2rem; }
+
+  .signup form {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .signup form .scroll-area {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+  }
+
+  .signup form .scroll-area> div { margin: 2rem 0; }
+
+  .signup form .box__info__agree .list__etc ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+  }
+
+  .signup form .box__info__agree .list__etc .list__tit { margin-bottom: 1rem; }
+
+  .signup form .box__info__agree .list__etc ul li:not(:last-child) {
+    border-bottom: 0;
+    border-right: 1px solid #333;
+  }
+
+  .signup form .box__info__agree .agree__subtit { text-align: center; }
+
+  .signup form .box__info__agree--bg,
+  .signup form .caution--center {
+    margin: 2rem 0;
+  }
+
+
+}
