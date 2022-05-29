@@ -17,7 +17,7 @@
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="../css/common.css" />
-    <link rel="stylesheet" href="../css/signin.css" />
+    <link rel="stylesheet" href="../css/notice.css" />
     
     <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -173,9 +173,9 @@
             <ul class="gnb">
               <li class="depth1"><a href="javascript:void(0)">Contact Us<span class="material-symbols-outlined mobile-only">chevron_right</span></a></li>
               <li class="depth1"><a href="javascript:void(0)">Product<span class="material-symbols-outlined mobile-only">chevron_right</span></a></li>
-              <li class="depth1"><a href="#">Login<span class="material-symbols-outlined mobile-only">chevron_right</span></a></li>
+              <li class="depth1"><a href="../signin/signin.html">Login<span class="material-symbols-outlined mobile-only">chevron_right</span></a></li>
               <li class="depth1"><a href="../signup/signup.html">Join<span class="material-symbols-outlined mobile-only">chevron_right</span></a></li>
-              <li class="depth1"><a href="../notice/notice.html">Notice<span class="material-symbols-outlined mobile-only">chevron_right</span></a></li>
+              <li class="depth1"><a href="#">Notice<span class="material-symbols-outlined mobile-only">chevron_right</span></a></li>
               <li class="depth1"><a href="javascript:void(0)">FAQ<span class="material-symbols-outlined mobile-only">chevron_right</span></a></li>
             </ul>
             <div class="event-mo mobile-only">
@@ -285,84 +285,334 @@
   </header>
 
 
-  <section class="signin">
+  <section class="notice">
 
-    <h5 class="kor">회원 로그인</h5>
-    <p class="desc">Columbia를 방문해주셔서 감사합니다. <br /> 로그인 하시면 Columbia의 다양한 서비스와 혜택을 누리실 수 있습니다.</p>
+    <h5 class="kor">NOTICE</h5>
+    <p class="desc">Columbia의 다양한 이벤트와 소식을 만나보세요.</p>
 
     <div class="inner">
-
-      <div class="banner">
-        <a href="javascript:void(0)">
-          <img src="../images/sign/login_220509_mo.jpeg" alt="회원가입 혜택" class="mobile-only" />
-          <img src="../images/sign/login_220509_dt.jpeg" alt="회원가입 혜택" class="pc-only" />
-        </a>
-      </div>
-
-      <div class="membership-container">
-
-        <form class="login">
-          <fieldset>
-            <dl>
-              <dt><label for="loginId">아이디</label></dt>
-              <dd><input type="text" id="loginId" name="loginId" placeholder="아이디" required /></dd>
-            </dl>
-            <dl>
-              <dt><label for="loginPwd">아이디</label></dt>
-              <dd><input type="password" id="loginPwd" name="loginPwd" placeholder="비밀번호" required /></dd>
-            </dl>
-            <div class="inp_chk">
-              <input type="checkbox" name="saveAutoLogin" value="y" id="saveAutoLogin">
-              <label for="saveAutoLogin">자동 로그인</label>
-              <input type="checkbox" id="saveId" name="saveId" value="y">
-              <label for="saveId">아이디 저장</label>
-            </div>
-            <button class="primary" type="submit">로그인</button>
-          </fieldset>
-        </form>
-
-        <div class="sns_login">
-          <div class="link_btn" onclick="location.href='javascript:void(0)'">
-            <div class="ico" title="네이버 간편 로그인"></div>
-            <span>네이버 아이디로 로그인</span>
+      
+        <div class="notice-area">
+          
+          <div class="search-area">
+            <legend class="hidden">공지사항 검색 폼</legend>
+            <input type="text" placeholder="검색어를 입력해주세요." maxlength="10">
+            <a href="javascript:void(0)"><span class="material-symbols-outlined">search</span></a>
           </div>
-          <div class="link_btn" onclick="location.href='javascript:void(0)'">
-            <div class="ico" title="카카오 간편 로그인"></div>
-            <span>카카오 아이디로 로그인</span>
+          
+          <ul class="pc-only list__basic__tit">
+            <li>No.</li>
+            <li>Title</li>
+            <li>Date</li>
+          </ul>
+          <ul class="list__basic">
+
+            <li>
+              <ul class="list__tit">
+                <li class="list__no">86</li>
+                <li><a href="javascript:void(0)">[당첨자발표] 4월 멤버십 리뷰 이벤트</a></li>
+                <li class="date">2022-05-13</li>
+              </ul>
+            </li>
+            <li class="notice-view__text">
+              <div>
+                안녕하세요. 컬럼비아스포츠웨어 코리아 입니다.<br /><br />
+                컬럼비아 4월 리뷰 이벤트 응모해주셔서 감사합니다.<br />
+                아래와 같이 4월 리뷰 이벤트 당첨자를 발표합니다.<br /><br />
+                모두 축하드립니다.
+              </div>
+              <div>
+                <strong>[5,000 포인트 (10명)]</strong>
+                <br /><br />
+                <ul>
+                  <li>cherr***</li>
+                  <li>ksm3***</li>
+                  <li>kimmi7***</li>
+                  <li>ddolme1***</li>
+                  <li>rhe***</li>
+                  <li>ku***</li>
+                  <li>hyunae0***</li>                   
+                  <li>oji***</li>
+                  <li>ggamik***</li>
+                  <li>n***</li>
+                </ul>
+              </div>
+              <div>
+                *경품은 회원정보에 기재된 휴대폰번호 및 배송지 주소로 발송됩니다. <br />
+                *경품 발송일 : 5/13 (금)
+              </div>
+            </li>
+
+            <li>
+              <ul class="list__tit">
+                <li class="list__no">85</li>
+                <li><a href="javascript:void(0)">[당첨자발표] 4월 신규회원가입 혜택</a></li>
+                <li class="date">2022-05-13</li>
+              </ul>
+            </li>
+            <li class="notice-view__text">
+              <div>
+                안녕하세요. 컬럼비아스포츠웨어 코리아 입니다.<br /><br />
+                컬럼비아 4월 신규가입 이벤트에 응모해주셔서 감사합니다.<br />
+                아래와 같이 4월 신규가입 이벤트 당첨자를 발표합니다.<br /><br />
+                모두 축하드립니다.
+              </div>
+              <div>
+                <strong>[10,000 포인트 (10명)]</strong>
+                <br /><br />
+                <ul>
+                  <li>kimmi7***</li>
+                  <li>kbuck***</li>
+                  <li>lovethe***</li>
+                  <li>everyon***</li>
+                  <li>oji***</li>
+                  <li>nur***</li>
+                  <li>choi8668yu***</li>                   
+                  <li>juny1***</li>
+                  <li>min250***</li>
+                  <li>sj73l***</li>
+                </ul>
+              </div>
+              <div>
+                *경품은 회원정보에 기재된 휴대폰번호 및 배송지 주소로 발송됩니다. <br />
+                *경품 발송일 : 5/13 (금)
+              </div>
+            </li>
+
+            <li>
+              <ul class="list__tit">
+                <li class="list__no">84</li>
+                <li><a href="javascript:void(0)">[당첨자발표] 멤버십 수신동의 이벤트</a></li>
+                <li class="date">2022-04-06</li>
+              </ul>
+            </li>
+            <li class="notice-view__text">
+              <div>
+                안녕하세요. 컬럼비아스포츠웨어 코리아 입니다.<br /><br />
+                컬럼비아 이벤트에 응모해주셔서 감사합니다.<br />
+                아래와 같이 멤버십 수신동의 이벤트 당첨자를 발표합니다.<br /><br />
+                모두 축하드립니다.
+              </div>
+              <div>
+                <strong>[스타벅스 기프티콘 (10명)]</strong>
+                <br /><br />
+                <ul>
+                  <li>mir****</li>
+                  <li>whd****</li>
+                  <li>zes****</li>
+                  <li>kou****</li>
+                  <li>goo****</li>                  
+                  <li>tja****</li>
+                  <li>jes****</li>                   
+                  <li>cuy****</li>
+                  <li>gug****</li>
+                  <li>qkr****</li>
+                </ul>
+              </div>
+              <div>
+                *경품은 회원정보에 기재된 휴대폰번호 및 배송지 주소로 발송됩니다. <br />
+                *경품 발송일 : 4/6(수)
+              </div>
+            </li>
+            
+            <li>
+              <ul class="list__tit">
+                <li class="list__no">83</li>
+                <li><a href="javascript:void(0)">[당첨자발표] 3월 신규회원가입 혜택</a></li>
+                <li class="date">2022-04-06</li>
+              </ul>
+            </li>
+            <li class="notice-view__text">
+              <div>
+                안녕하세요. 컬럼비아스포츠웨어 코리아 입니다.<br /><br />
+                컬럼비아 3월 신규가입 이벤트에 응모해주셔서 감사합니다.<br />
+                아래와 같이 3월 신규가입 웰컴선물 이벤트 당첨자를 발표합니다.<br /><br />
+                모두 축하드립니다.
+              </div>
+              <div>
+                <strong>[스타벅스 기프티콘 (10명)]</strong>
+                <br /><br />
+                <ul>
+                  <li>ital****</li>
+                  <li>bum6****</li>
+                  <li>ksoo****</li>
+                  <li>frie****</li>
+                  <li>why2****</li>
+                  <li>infe****</li>
+                  <li>tmda****</li>
+                  <li>love****</li>
+                  <li>yama****</li>
+                  <li>orig****</li>
+                </ul>
+              </div>
+              <div>
+                *경품은 회원정보에 기재된 휴대폰번호 및 배송지 주소로 발송됩니다. <br />
+                *경품 발송일 : 4/7(목)
+              </div>
+            </li>
+
+            <li>
+              <ul class="list__tit">
+                <li class="list__no">82</li>
+                <li><a href="javascript:void(0)">마운틴하드웨어 수선서비스 종료안내</a></li>
+                <li class="date">2022-04-05</li>
+              </ul>
+            </li>
+            <li class="notice-view__text">
+              <div>
+                안녕하세요. 컬럼비아스포츠웨어 코리아 입니다.<br /><br />
+                당사 브랜드인 마운틴하드웨어 제품의 수선 서비스와 관련하여 안내사항을 공지드립니다
+              </div>
+              <div>
+                당사는 2017년 11월 마운틴하드웨어의 영업 종료 후 현재까지 제품에 대한 수선 서비스를 제공해오고 있으나<br />
+                아래의 기간 이후 수선 서비스가 종료 됨을 안내 드립니다<br /><br />
+                수선 서비스 종료일 : 2022년 06월 30일 <br />
+                수선 서비스 종료일 이후 수선 접수가 어려운 점에 대해 양해 부탁드립니다
+              </div>
+              <div>
+                이와 관련하여 추가 문의는<br /> 
+                고객지원팀 (080-540-0277) 으로 연락 주시면 감사하겠습니다<br />
+                당사는 앞으로도 더 좋은 제품으로 고객님의 성원에 보답하겠습니다
+              </div>
+            </li>
+
+            <li>
+              <ul class="list__tit">
+                <li class="list__no">81</li>
+                <li><a href="javascript:void(0)">[당첨자발표] 1월 신규회원가입 혜택</a></li>
+                <li class="date">2022-02-15</li>
+              </ul>
+            </li>
+            <li class="notice-view__text">
+              <div>
+                안녕하세요. 컬럼비아스포츠웨어 코리아 입니다.<br /><br />
+                컬럼비아 1월 신규가입 이벤트에 응모해주셔서 감사합니다.<br />
+                아래와 같이 1월 신규가입 웰컴선물 이벤트 당첨자를 발표합니다.<br /><br />
+                모두 축하드립니다.
+              </div>
+              <div>
+                <strong>[패딩 블랭킷 (10명)]</strong>
+                <br /><br />
+                <ul>
+                  <li>jong****</li>
+                  <li>nanu****</li>
+                  <li>pigg****</li>
+                  <li>sohn****</li>
+                  <li>mts7****</li>
+                  <li>mkjy****</li>
+                  <li>tedd****</li>
+                  <li>mywa****</li>
+                  <li>hera****</li>
+                  <li>litm****</li>
+                </ul>
+              </div>
+              <div>
+                <strong>[스타벅스 기프티콘 (5명)]</strong>
+                <br /><br />
+                <ul>
+                  <li>yuda****</li>
+                  <li>toph****</li>
+                  <li>qhff****</li>
+                  <li>sky2****</li>
+                  <li>jepi****</li>
+                </ul>
+              </div>
+              <div>
+                *경품은 회원정보에 기재된 휴대폰번호 및 배송지 주소로 발송됩니다. <br />
+                *경품 발송일 : 2/17(목)
+              </div>
+            </li>
+              
+            <li>
+              <ul class="list__tit">
+                <li class="list__no">80</li>
+                <li><a href="javascript:void(0)">[당첨자발표] 새해 소원 댓글 이벤트</a></li>
+                <li class="date">2022-01-19</li>
+              </ul>
+            </li>
+            <li class="notice-view__text">
+              <div>
+                안녕하세요. 컬럼비아스포츠웨어 코리아 입니다.<br /><br />
+                컬럼비아 새해 소원 댓글 이벤트에 응모해주셔서 감사합니다.<br />
+                아래와 같이 새해 소원 댓글 이벤트 당첨자를 발표합니다.<br /><br />
+                모두 축하드립니다.
+              </div>
+              <div>
+                <strong>[치킨 기프티콘 (1명)]</strong>
+                <br /><br />
+                <p>oliv****</p>
+                <strong>[컬럼비아 달력&amp;다이어리 (10명)]</strong>
+                <br /><br />
+                <ul>
+                  <li>sunn****</li>
+                  <li>zest****</li>
+                  <li>idls****</li>
+                  <li>leed****</li>
+                  <li>kore****</li>
+                  <li>jdk0****</li>
+                  <li>rain****</li>
+                  <li>ays2****</li>
+                  <li>af27****</li>
+                  <li>love****</li>
+                </ul>
+              </div>
+              <div>
+                <strong>[스타벅스 기프티콘 (10명)]</strong>
+                <br /><br />
+                <ul>
+                  <li>thki***</li>
+                  <li>jhli****</li>
+                  <li>ldh1****</li>
+                  <li>dvm2****</li>
+                  <li>shar****</li>
+                  <li>doky****</li>
+                  <li>nami****</li>
+                  <li>ksm3****</li>
+                  <li>assa****</li>
+                  <li>codm****</li>
+                </ul>
+              </div>
+              <div>
+                *경품은 회원정보에 기재된 휴대폰번호 및 배송지 주소로 발송됩니다. <br />
+                *경품 발송일 : 1/24(월)
+              </div>
+            </li>
+
+          </ul>
+          
+          <div class="paging-sub">
+            <a href="javascript:void(0)" class="paging__pre" title="이전페이지이동">
+              <span class="material-symbols-outlined">arrow_back_ios</span>
+            </a> 
+            <a class="on">1</a>
+            <a href="javascript:void(0)">2</a> 
+            <a href="javascript:void(0)">3</a> 
+            <a href="javascript:void(0)">4</a> 
+            <a href="javascript:void(0)">5</a> 
+            <a href="javascript:void(0)" class="paging__next" title="다음페이지이동">
+              <span class="material-symbols-outlined">arrow_forward_ios</span>
+            </a> 
           </div>
+        
         </div>
-        <ul class="login_find">
-          <li><a href="javasscript:void(0)">회원가입</a></li>
-          <li><a href="javasscript:void(0)">아이디찾기</a></li>
-          <li><a href="javasscript:void(0)">비밀번호찾기</a></li>
-        </ul>
-
-        <div class="guest_order">
-          <form>
-            <div class="guest_txt">
-              <strong>비회원 주문조회</strong>
-              <br />
-              <span>주문자 이름과 주문 번호를 입력해주세요</span>
-            </div>
-            <fieldset>
-              <dl>
-                <dt><label for="orderNm">주문자 이름</label></dt>
-                <dd><input type="text" id="orderNm" name="orderNm" placeholder="주문자명" required /></dd>
-              </dl>
-              <dl>
-                <dt><label for="orderNo">주문번호</label></dt>
-                <dd><input type="number" id="orderNo" name="orderNo" placeholder="주문번호" required /></dd>
-              </dl>
-              <button class="primary" type="submit">주문 조회</button>
-            </fieldset>
-          </form>
-        </div>
-
-      </div>
-
+      
     </div>
 
   </section>
+
+
+  <script>
+    $(document).ready(function(){
+      $('.list__tit').on('click', function(){
+        $(this).toggleClass('on');
+        if($(this).hasClass('on')){
+          $(this).parents('li').next('li').slideDown().siblings('.notice-view__text').slideUp();
+        } else {
+          $('.notice-view__text').css({"display": "none"});
+        }
+      });
+    });
+  </script>
 
 
   <footer>

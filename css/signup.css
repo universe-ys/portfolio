@@ -8,8 +8,6 @@ input {
   border: none;
 }
 
-.hidden { display: none; }
-
 .signup {
   padding: 120px 5% 3rem;
   overflow: hidden;
