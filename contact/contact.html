@@ -286,10 +286,68 @@
 
 
   <section class="contact">
+    <h5 class="kor">CONTACT US</h2>			
+    
+    <div class="inner">
+      <div class="contact__map" id="map"></div>
+      
+      <div class="contact__info">
+        <div class="contact__address">
+          <p class="tit">본사 주소</p>
+          <address>
+            서울특별시 동대문구 천호대로 429(장안동) 대성타워 7~10층
+          </address>
+        </div>
+        <div class="contact__tel">
+          <p class="tit">대표번호</p>
+          <p class="tels">080-540-0277</p>
+        </div>
+        <div class="contact__tel--cs">
+          <p class="tit">고객센터</h3>
+          <p class="tels">1800-1784</p>
+        </div>
+      </div>
+        
+      <div class="contact__way">
+        <p class="tit">버스로 오시는 법</p>
+        <p class="way">장한평역에서 하차후, 우리은행 장한평지점 방면으로 횡단보도 건너서 대성타워 7~10층</p>
+        <ul class="bus">
+          <li>광역(레드)버스 : 9301, 9403</li>
+          <li>간선(블루)버스 : 130, 300, 303, 370, 721</li>
+          <li>지선(그린)버스 : 2112, 2221, 2233, 3216, 3220</li>
+          <li>공항버스 : 6013</li>
+        </ul> 
+        <p class="tit">지하철로 오시는 법</p>
+        <p>5호선 장한평역 4번출구에서 군자역 방면 약 200m 직진</p>
+      </div>
+      
+    </div>
 
   </section>
 
+  <script>
+    var map;
+      function initMap() {
+          var company = {lat: 37.5614639, lng: 127.06674139999998};
 
+          var defaultOptions = {
+              zoom: 16,
+              center: company,
+              disableDefaultUI:true,
+              zoomControl: true
+              };
+          map = new google.maps.Map(document.getElementById('map'), defaultOptions);
+
+          var myIcon = new google.maps.MarkerImage("../images/contact/columbia_pin.png");
+          var marker = new google.maps.Marker({
+              position: company, 
+              map: map,
+              icon: myIcon
+          });
+        }
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQ4BmHcq2dykT5uMokmQiWCYuLa59mrEA&callback=initMap"></script>
+  
   <footer>
 
     <div class="inner">

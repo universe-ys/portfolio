@@ -1,0 +1,54 @@
+/* MOBILE */
+
+.contact {
+  padding: 120px 5% 3rem;
+  overflow: hidden;
+}
+
+.contact .inner { 
+  padding: 2rem 0; 
+  color: #828282;
+}
+
+.contact #map {
+  width: 100%;
+  max-width: 1200px;
+  height: 400px;
+  margin-bottom: 3rem;
+}
+
+.contact .tit {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact .contact__info> div,
+.contact .contact__way ul {
+  margin-bottom: 1rem;
+}
+
+
+/* LAPTOP */
+@media screen and (min-width: 1200px) {
+
+
+  .contact { padding: 200px 0 2rem; }
+
+  .contact .inner { 
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .contact .contact__info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+
+  .contact .contact__info> div:not(:last-child) { margin-right: 3rem; }
+
+
+}
