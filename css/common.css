@@ -708,6 +708,10 @@ footer .f_bottom address .copy {
     padding: 2rem 0;
     justify-content: flex-start;
   }
+
+  header h1 a {
+    background-size: contain;
+  }
   
   header .header_con  {
     width: 100%;
