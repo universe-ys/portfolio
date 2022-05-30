@@ -1,12 +1,20 @@
 /* MOBILE */
+
+input {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 1.4rem;
+  outline: none;
+  background: transparent;
+  padding-left: 10px;
+  border: none;
+}
+
 .faq {
   padding: 120px 5% 3rem;
   overflow: hidden;
 }
 
-.faq .inner { 
-  padding: 2rem 0;
-}
+.faq .inner {  padding: 2rem 0; }
 
 .faq .desc { 
   text-align: center;
@@ -19,7 +27,7 @@
   height: 50px;
 }
 
-.faq .faq-list__tab .faq-list--mo {
+.faq .faq-list__tab .faq-list.mo {
   position: absolute;
   top: 0;
   left: 0;
@@ -35,38 +43,28 @@
   transform: rotate(0);
 }
 
-.faq .faq-list__tab span.on {
-  transform: rotate(180deg);
-}
+.faq .faq-list__tab span.on { transform: rotate(180deg); }
 
-.faq .faq-list--pc {
-  display: none;
-}
+.faq .faq-list.pc { display: none; }
 
-.faq .faq-list__tab.active .faq-list--mo li {
-  display: block;
-}
+.faq .faq-list__tab.active .faq-list.mo li { display: block; }
 
-.faq .faq-list__tab .faq-list--mo li {
+.faq .faq-list__tab .faq-list.mo li {
   display: none;
   height: 30px;
   line-height: 30px;
   padding: 10px 5%;
 }
 
-.faq .faq-list__tab .faq-list--mo li.on {
-  display: block;
-}
+.faq .faq-list__tab .faq-list.mo li.on { display: block; }
 
-.faq .faq-list__tab .faq-list--mo li:hover,
-.faq .faq-list__tab .faq-list--mo li:active {
+.faq .faq-list__tab .faq-list.mo li:hover,
+.faq .faq-list__tab .faq-list.mo li:active {
   background: rgba(0, 122, 185, .5);
   color: #fff;
 }
 
-.faq .list__basic {
-  margin: 2rem 0;
-}
+.faq .list__basic { margin: 2rem 0; }
 
 .faq .list__basic .list__basic__con {
   display: none;
@@ -75,18 +73,20 @@
   padding: 1rem 5%;
 } 
 
-.faq .list__basic .list__basic__con.on {
-  display: block;
-}
+.faq .list__basic .list__basic__con.on { display: block; }
 
 .faq .list__basic .list__basic__info {
   height: 40px;
   line-height: 40px;
+  cursor: pointer;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
-.faq .list__basic .list__basic__info:not(:first-child) {
-  border-top: 1px solid #ddd;
-}
+.faq .list__basic .list__basic__info:not(:first-child) { border-top: 1px solid #ddd; }
 
 .faq .list__basic .list__basic__detail {
   background: rgb(250, 250, 250);
@@ -95,22 +95,9 @@
   display: none;
 }
 
-.faq .list__basic .list__basic__detail> a {
-  display: inline;
-}
+.faq .list__basic .list__basic__detail.on { display: block; }
 
-
-
-
-
-
-
-
-
-
-
-
-
+.faq .list__basic .list__basic__detail> a { display: inline; }
 
 .faq .paging-sub {
   display: flex;
@@ -131,9 +118,6 @@
 }
 
 
-
-
-
 /* LAPTOP */
 @media screen and (min-width: 1200px) {
 
@@ -142,10 +126,10 @@
 
   .faq .inner {
     width: 1200px;
-    margin: 0 auto;
+    margin: 2rem auto;
   }
 
-  .faq .faq-list--pc {
+  .faq .faq-list.pc {
     width: 1000px;
     margin: 0 auto;
     display: flex;
@@ -155,95 +139,93 @@
     border: 1px solid #333;
   }
 
-  .faq .faq-list--pc li {
+  .faq .faq-list.pc li {
     width: calc(1000px/7);
     height: 100px;
     padding: 10px 0 5px;
     text-align: center;
   }
 
-  .faq .faq-list--pc li:not(:last-child) {
-    border-right: 1px solid #333;
-  }
+  .faq .faq-list.pc li:not(:last-child) { border-right: 1px solid #333; }
 
-  .faq .faq-list--pc li.on {
+  .faq .faq-list.pc li.on {
     background: rgba(0, 122, 185, .5);
     color: #fff;
   }
 
-  .faq .faq-list--pc> :nth-child(1) a {
+  .faq .faq-list.pc> :nth-child(1) a {
     background: url('../images/faq/ico_member.png') no-repeat;
     background-position: center center;
   }
 
-  .faq .faq-list--pc> :nth-child(1).on a {
+  .faq .faq-list.pc> :nth-child(1).on a {
     background: url('../images/faq/ico_member_on.png') no-repeat;
     background-position: center center;
   }
 
-  .faq .faq-list--pc> :nth-child(2) a {
+  .faq .faq-list.pc> :nth-child(2) a {
     background: url('../images/faq/ico_order.png') no-repeat;
     background-position: center center;
   }
 
-  .faq .faq-list--pc> :nth-child(2).on a {
+  .faq .faq-list.pc> :nth-child(2).on a {
     background: url('../images/faq/ico_order_on.png') no-repeat;
     background-position: center center;
   }
   
-  .faq .faq-list--pc> :nth-child(3) a {
+  .faq .faq-list.pc> :nth-child(3) a {
     background: url('../images/faq/ico_pay.png') no-repeat;
     background-position: center center;
   }
 
-  .faq .faq-list--pc> :nth-child(3).on a {
+  .faq .faq-list.pc> :nth-child(3).on a {
     background: url('../images/faq/ico_pay_on.png') no-repeat;
     background-position: center center;
   }
 
-  .faq .faq-list--pc> :nth-child(4) a {
+  .faq .faq-list.pc> :nth-child(4) a {
     background: url('../images/faq/ico_delivery.png') no-repeat;
     background-position: center center;
   }
 
-  .faq .faq-list--pc> :nth-child(4).on a {
+  .faq .faq-list.pc> :nth-child(4).on a {
     background: url('../images/faq/ico_delivery_on.png') no-repeat;
     background-position: center center;
   }
 
-  .faq .faq-list--pc> :nth-child(5) a {
+  .faq .faq-list.pc> :nth-child(5) a {
     background: url('../images/faq/ico_product_faq.png') no-repeat;
     background-position: center center;
   }
 
-  .faq .faq-list--pc> :nth-child(5).on a {
+  .faq .faq-list.pc> :nth-child(5).on a {
     background: url('../images/faq/ico_product_faq_on.png') no-repeat;
     background-position: center center;
   }
 
-  .faq .faq-list--pc> :nth-child(6) a {
+  .faq .faq-list.pc> :nth-child(6) a {
     background: url('../images/faq/ico_as.png') no-repeat;
     background-position: center center;
   }
 
-  .faq .faq-list--pc> :nth-child(6).on a {
+  .faq .faq-list.pc> :nth-child(6).on a {
     background: url('../images/faq/ico_as_on.png') no-repeat;
     background-position: center center;
   }
 
-  .faq .faq-list--pc> :nth-child(7) a {
+  .faq .faq-list.pc> :nth-child(7) a {
     background: url('../images/faq/ico_etc.png') no-repeat;
     background-position: center center;
   }
 
-  .faq .faq-list--pc> :nth-child(7).on a {
+  .faq .faq-list.pc> :nth-child(7).on a {
     background: url('../images/faq/ico_etc.png') no-repeat;
     background-position: center center;
   }
 
-  .faq .faq-list__tab {
-    display: none;
-  }
+  .faq .faq-list__tab { display: none; }
+
+  .faq .list__basic { margin: 3rem 0; }
 
 
 

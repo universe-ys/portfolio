@@ -53,12 +53,10 @@
 
     <div>
       <ul class="snb">
-        <li><a href="javascript:void(0)">배송조회</a></li>
-        <!-- <li><a href="javascript:void(0)">Sign In</a></li>
-        <li><a href="javascript:void(0)">Join</a></li> -->
+        <li onClick="alert('회원가입 또는 로그인을 하신후 사용하시기 바랍니다.')"><a href="javascript:void(0)">배송조회</a></li>
         <li onClick="alert('회원가입 또는 로그인을 하신후 사용하시기 바랍니다.')"><a href="javascript:void(0)">My page</a></li>
         <li onClick="alert('회원가입 또는 로그인을 하신후 사용하시기 바랍니다.')"><a href="javascript:void(0)"><span class="material-symbols-outlined">favorite</span></a></li>
-        <li><a href="javascript:void(0)"><span class="material-symbols-outlined">shopping_bag</span></a></li>
+        <li onClick="alert('회원가입 또는 로그인을 하신후 사용하시기 바랍니다.')"><a href="javascript:void(0)"><span class="material-symbols-outlined">shopping_bag</span></a></li>
       </ul>
       <div class="coupon">10% COUPON</div>
     </div>
@@ -70,7 +68,7 @@
 
     <div class="inner">
       
-      <h1><a href="/" title="컬럼비아 로고"></a></h1>
+      <h1><a href="www.threeyou.com/columbia" title="컬럼비아 로고"></a></h1>
 
       <div class="header_con">
 
@@ -292,30 +290,30 @@
     
     <div class="inner">
       <div class="faq-list__tab">
-        <ul class="faq-list--mo">
-          <li class="tab on"><a href="javascript:void(0)" class="member" data-tab="tab-1">회원관련</a></li>
-          <li class="tab"><a href="javascript:void(0)" class="order" data-tab="tab-2">주문관련</a></li>
-          <li class="tab"><a href="javascript:void(0)" class="pay" data-tab="tab-3">결제관련</a></li>
-          <li class="tab"><a href="javascript:void(0)" class="delivery" data-tab="tab-4">배송관련</a></li>
-          <li class="tab"><a href="javascript:void(0)" class="goods" data-tab="tab-5">상품관련</a></li>
-          <li class="tab"><a href="javascript:void(0)" class="as" data-tab="tab-6">A/S관련</a></li>
-          <li class="tab"><a href="javascript:void(0)" class="etc" data-tab="tab-7">기타</a></li>
+        <ul class="faq-list mo">
+          <li class="tab on"><a href="#tab1" class="btn">회원관련</a></li>
+          <li class="tab"><a href="#tab2" class="btn">주문관련</a></li>
+          <li class="tab"><a href="#tab3" class="btn">결제관련</a></li>
+          <li class="tab"><a href="#tab4" class="btn">배송관련</a></li>
+          <li class="tab"><a href="#tab5" class="btn">상품관련</a></li>
+          <li class="tab"><a href="#tab6" class="btn">A/S관련</a></li>
+          <li class="tab"><a href="#tab7" class="btn">기타</a></li>
         </ul>
         <span class="material-symbols-outlined">expand_more</span>
       </div>
-      <ul class="faq-list--pc">
-        <li class="tab on"><a href="javascript:void(0)" class="member" data-tab="tab-1">회원</a></li>
-        <li class="tab"><a href="javascript:void(0)" class="order" data-tab="tab-2">주문</a></li>
-        <li class="tab"><a href="javascript:void(0)" class="pay" data-tab="tab-3">결제</a></li>
-        <li class="tab"><a href="javascript:void(0)" class="delivery" data-tab="tab-4">배송</a></li>
-        <li class="tab"><a href="javascript:void(0)" class="goods" data-tab="tab-5">상품</a></li>
-        <li class="tab"><a href="javascript:void(0)" class="as" data-tab="tab-6">A/S</a></li>
-        <li class="tab"><a href="javascript:void(0)" class="etc" data-tab="tab-7">기타</a></li>
+      <ul class="faq-list pc">
+        <li class="tab on"><a href="#tab1" class="btn">회원</a></li>
+        <li class="tab"><a href="#tab2" class="btn">주문</a></li>
+        <li class="tab"><a href="#tab3" class="btn">결제</a></li>
+        <li class="tab"><a href="#tab4" class="btn">배송</a></li>
+        <li class="tab"><a href="#tab5" class="btn">상품</a></li>
+        <li class="tab"><a href="#tab6" class="btn">A/S</a></li>
+        <li class="tab"><a href="#tab7" class="btn">기타</a></li>
       </ul>
 
       <div class="list__basic">
         
-        <ul class="list__basic__con on" id="tab-1">
+        <ul class="list__basic__con on" id="tab1">
           <li class="list__basic__info">Q. 회원 아이디가 기억이 나지 않습니다</li>
           <li class="list__basic__detail">
             사이트 상단의 "로그인"을 클릭하시면, "아이디 찾기" 버튼이 보입니다.<br />
@@ -349,7 +347,7 @@
           </li>
         </ul>
 
-        <ul class="list__basic__con" id="tab-2" >
+        <ul class="list__basic__con" id="tab2" >
 						<li class="list__basic__info ">Q. 주문취소는 어떻게 하나요?</li>
 						<li class="list__basic__detail">
 							* 입금 전 주문취소 (무통장)<br />
@@ -416,7 +414,7 @@
 						</li>
 					</ul>
 
-        <ul class="list__basic__con" id="tab-3">
+        <ul class="list__basic__con" id="tab3">
           <li class="list__basic__info ">Q. 무통장입금(가상계좌)시 입금대기는 언제까지 가능한가요?</li>
           <li class="list__basic__detail">
             무통장 입금(가상계좌)으로 주문 후 가상계좌의 입금 기한(고객 설정)까지 주문은 유효 합니다. 최대 2일까지 설정 하실 수 있습니다. <br />
@@ -435,7 +433,7 @@
           </li>
         </ul>
 
-        <ul class="list__basic__con" id="tab-4">
+        <ul class="list__basic__con" id="tab4">
           <li class="list__basic__info ">Q. 배송기간은 얼마나 걸리나요?</li>
           <li class="list__basic__detail">
             평균배송기간은 결제일로부터 영업일 기준으로 3일(토요일,공휴일 제외) 정도 소요되며 재고상황에 따라 다소 지연될 수 있습니다.<br /> 
@@ -471,7 +469,7 @@
           </li>
         </ul>
 
-        <ul class="list__basic__con" id="tab-5">
+        <ul class="list__basic__con" id="tab5">
           <li class="list__basic__info ">Q. 가죽 등산화도 세탁을 해야 하나요?</li>
           <li class="list__basic__detail">
             가죽 제품의 경우 물세탁을 권장하지 않습니다.<br />
@@ -533,7 +531,7 @@
           </li>
         </ul>
 
-        <ul class="list__basic__con" id="tab-6">
+        <ul class="list__basic__con" id="tab6">
           <li class="list__basic__info ">Q. 옷에 보풀이 많이 일어 났는데 수선이 가능한가요?</li>
           <li class="list__basic__detail">
             A. 아웃도어 상품의 경우 통기성, 신축성등이 강화된 기능성 상품으로 합성 섬유로 만들어 졌습니다.<br />
@@ -585,7 +583,7 @@
           </li>
         </ul>
 
-        <ul class="list__basic__con" id="tab-7">
+        <ul class="list__basic__con" id="tab7">
           <li class="list__basic__info">Q. 고객센터 운영시간</li>
           <li class="list__basic__detail">
             <div>
@@ -648,7 +646,7 @@
       
 
 
-        $('.faq-list--pc li').on('click', function(){
+        $('.faq-list.pc li').on('click', function(){
           $(this).addClass('on').siblings().removeClass('on');
         });
 
@@ -663,7 +661,7 @@
           $(this).toggleClass('active');
           $('.faq-list__tab span').toggleClass('on');
 
-          $('.faq-list--mo li').on('click', function(){
+          $('.faq-list.mo li').on('click', function(){
             $(this).addClass('on').siblings().removeClass('on');
           });
 
@@ -675,6 +673,35 @@
 
 
 
+      $('.list__basic__info').on('click', function(){
+        $(this).next('.list__basic__detail').slideToggle('on');
+        $(this).siblings().next('.list__basic__detail').slideUp();
+      });
+
+
+      // const tabList = document.querySelectorAll('.faq-list .tab');
+      // const contents = document.querySelectorAll('.list__basic .list__basic__con')
+      // let activeCont = ''; // 현재 활성화 된 컨텐츠 (기본:#tab1 활성화)
+
+      // for(var i = 0; i < tabList.length; i++){
+      //   tabList[i].querySelector('.btn').addEventListener('click', function(e){
+      //     e.preventDefault();
+      //     for(var j = 0; j < tabList.length; j++){
+      //       // 나머지 버튼 클래스 제거
+      //       tabList[j].classList.remove('on');
+
+      //       // 나머지 컨텐츠 display:none 처리
+      //       contents[j].style.display = 'none';
+      //     }
+
+      //     // 버튼 관련 이벤트
+      //     this.parentNode.classList.add('on');
+
+      //     // 버튼 클릭시 컨텐츠 전환
+      //     activeCont = this.getAttribute('href');
+      //     document.querySelector(activeCont).style.display = 'block';
+      //   });
+      // }
 
 
 
