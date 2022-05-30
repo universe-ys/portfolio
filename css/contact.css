@@ -1,5 +1,14 @@
 /* MOBILE */
 
+input {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 1.4rem;
+  outline: none;
+  background: transparent;
+  padding-left: 10px;
+  border: none;
+}
+
 .contact {
   padding: 120px 5% 3rem;
   overflow: hidden;
