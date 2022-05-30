@@ -291,8 +291,8 @@
     <p class="desc">무엇을 도와드릴까요?</p>
     
     <div class="inner">
-      <div class="faq-list__tab">
-        <ul class="faq-list">
+      <div class="faq-list__tab mobile-only">
+        <ul class="faq-list--mo">
           <li class="tab on"><a href="javascript:void(0)" class="member" data-tab="tab-1">회원관련</a></li>
           <li class="tab"><a href="javascript:void(0)" class="order" data-tab="tab-2">주문관련</a></li>
           <li class="tab"><a href="javascript:void(0)" class="pay" data-tab="tab-3">결제관련</a></li>
@@ -301,8 +301,17 @@
           <li class="tab"><a href="javascript:void(0)" class="as" data-tab="tab-6">A/S관련</a></li>
           <li class="tab"><a href="javascript:void(0)" class="etc" data-tab="tab-7">기타</a></li>
         </ul>
-        <span class="material-symbols-outlined">expand_more</span>
+        <span class="material-symbols-outlined mobile-only">expand_more</span>
       </div>
+      <ul class="faq-list--pc">
+        <li class="tab on"><a href="javascript:void(0)" class="member" data-tab="tab-1">회원관련</a></li>
+        <li class="tab"><a href="javascript:void(0)" class="order" data-tab="tab-2">주문관련</a></li>
+        <li class="tab"><a href="javascript:void(0)" class="pay" data-tab="tab-3">결제관련</a></li>
+        <li class="tab"><a href="javascript:void(0)" class="delivery" data-tab="tab-4">배송관련</a></li>
+        <li class="tab"><a href="javascript:void(0)" class="goods" data-tab="tab-5">상품관련</a></li>
+        <li class="tab"><a href="javascript:void(0)" class="as" data-tab="tab-6">A/S관련</a></li>
+        <li class="tab"><a href="javascript:void(0)" class="etc" data-tab="tab-7">기타</a></li>
+      </ul>
 
       <div class="list__basic">
         
@@ -642,28 +651,18 @@
 
 
 
-        // $('.faq-list__tab').on('click', function(){
-        //   $(this).toggleClass('active');
-          
+        $('.faq-list__tab').on('click', function(){
+          $(this).toggleClass('active');
+          $('.faq-list__tab span').toggleClass('on');
 
-        // });
+          $('.faq-list--mo li').on('click', function(){
+            $(this).addClass('on').siblings().removeClass('on');
+          });
+        });
 
 
 
       }
-
-
-
-      
-      $('.faq-list li').click(function(){							//선택자를 통해 tabs 메뉴를 클릭 이벤트를 지정해줍니다.
-        var tab_id = $(this).attr('data-tab');        		
-
-        $('.faq-list__tab').toggleClass('active');
-        $('.faq-list__tab span').toggleClass('on');
-
-        $(this).addClass('on').siblings().removeClass('on');;					
-        $("#" + tab_id).addClass('on').siblings().removeClass('on');
-      })
 
 
 
