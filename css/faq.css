@@ -19,7 +19,7 @@
   height: 50px;
 }
 
-.faq .faq-list__tab .faq-list {
+.faq .faq-list__tab .faq-list--mo {
   position: absolute;
   top: 0;
   left: 0;
@@ -39,23 +39,27 @@
   transform: rotate(180deg);
 }
 
-.faq .faq-list__tab.active .faq-list li {
+.faq .faq-list--pc {
+  display: none;
+}
+
+.faq .faq-list__tab.active .faq-list--mo li {
   display: block;
 }
 
-.faq .faq-list__tab .faq-list li {
+.faq .faq-list__tab .faq-list--mo li {
   display: none;
   height: 30px;
   line-height: 30px;
   padding: 10px 5%;
 }
 
-.faq .faq-list__tab .faq-list li.on {
+.faq .faq-list__tab .faq-list--mo li.on {
   display: block;
 }
 
-.faq .faq-list__tab .faq-list li:hover,
-.faq .faq-list__tab .faq-list li:active {
+.faq .faq-list__tab .faq-list--mo li:hover,
+.faq .faq-list__tab .faq-list--mo li:active {
   background: rgba(0, 122, 185, .5);
   color: #fff;
 }
@@ -132,5 +136,115 @@
 
 /* LAPTOP */
 @media screen and (min-width: 1200px) {
+
+
+  .faq { padding: 200px 0 2rem; }
+
+  .faq .inner {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .faq .faq-list--pc {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #333;
+  }
+
+  .faq .faq-list--pc li {
+    width: calc(1000px/7);
+    height: 100px;
+    padding: 10px 0 5px;
+    text-align: center;
+  }
+
+  .faq .faq-list--pc li:not(:last-child) {
+    border-right: 1px solid #333;
+  }
+
+  .faq .faq-list--pc li.on {
+    background: rgba(0, 122, 185, .5);
+    color: #fff;
+  }
+
+  .faq .faq-list--pc> :nth-child(1) a {
+    background: url('../images/faq/ico_member.png') no-repeat;
+    background-position: center center;
+  }
+
+  .faq .faq-list--pc> :nth-child(1).on a {
+    background: url('../images/faq/ico_member_on.png') no-repeat;
+    background-position: center center;
+  }
+
+  .faq .faq-list--pc> :nth-child(2) a {
+    background: url('../images/faq/ico_order.png') no-repeat;
+    background-position: center center;
+  }
+
+  .faq .faq-list--pc> :nth-child(2).on a {
+    background: url('../images/faq/ico_order_on.png') no-repeat;
+    background-position: center center;
+  }
+  
+  .faq .faq-list--pc> :nth-child(3) a {
+    background: url('../images/faq/ico_pay.png') no-repeat;
+    background-position: center center;
+  }
+
+  .faq .faq-list--pc> :nth-child(3).on a {
+    background: url('../images/faq/ico_pay_on.png') no-repeat;
+    background-position: center center;
+  }
+
+  .faq .faq-list--pc> :nth-child(4) a {
+    background: url('../images/faq/ico_delivery.png') no-repeat;
+    background-position: center center;
+  }
+
+  .faq .faq-list--pc> :nth-child(4).on a {
+    background: url('../images/faq/ico_delivery_on.png') no-repeat;
+    background-position: center center;
+  }
+
+  .faq .faq-list--pc> :nth-child(5) a {
+    background: url('../images/faq/ico_product_faq.png') no-repeat;
+    background-position: center center;
+  }
+
+  .faq .faq-list--pc> :nth-child(5).on a {
+    background: url('../images/faq/ico_product_faq_on.png') no-repeat;
+    background-position: center center;
+  }
+
+  .faq .faq-list--pc> :nth-child(6) a {
+    background: url('../images/faq/ico_as.png') no-repeat;
+    background-position: center center;
+  }
+
+  .faq .faq-list--pc> :nth-child(6).on a {
+    background: url('../images/faq/ico_as_on.png') no-repeat;
+    background-position: center center;
+  }
+
+  .faq .faq-list--pc> :nth-child(7) a {
+    background: url('../images/faq/ico_etc.png') no-repeat;
+    background-position: center center;
+  }
+
+  .faq .faq-list--pc> :nth-child(7).on a {
+    background: url('../images/faq/ico_etc.png') no-repeat;
+    background-position: center center;
+  }
+
+  .faq .faq-list__tab {
+    display: none;
+  }
+
+
 
 }
