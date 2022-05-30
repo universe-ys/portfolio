@@ -292,7 +292,7 @@
     
     <div class="inner">
       <div class="faq-list__tab">
-        <ul class="faq-list">
+        <ul class="faq-list--mo">
           <li class="tab on"><a href="javascript:void(0)" class="member" data-tab="tab-1">회원관련</a></li>
           <li class="tab"><a href="javascript:void(0)" class="order" data-tab="tab-2">주문관련</a></li>
           <li class="tab"><a href="javascript:void(0)" class="pay" data-tab="tab-3">결제관련</a></li>
@@ -303,6 +303,15 @@
         </ul>
         <span class="material-symbols-outlined">expand_more</span>
       </div>
+      <ul class="faq-list--pc">
+        <li class="tab on"><a href="javascript:void(0)" class="member" data-tab="tab-1">회원</a></li>
+        <li class="tab"><a href="javascript:void(0)" class="order" data-tab="tab-2">주문</a></li>
+        <li class="tab"><a href="javascript:void(0)" class="pay" data-tab="tab-3">결제</a></li>
+        <li class="tab"><a href="javascript:void(0)" class="delivery" data-tab="tab-4">배송</a></li>
+        <li class="tab"><a href="javascript:void(0)" class="goods" data-tab="tab-5">상품</a></li>
+        <li class="tab"><a href="javascript:void(0)" class="as" data-tab="tab-6">A/S</a></li>
+        <li class="tab"><a href="javascript:void(0)" class="etc" data-tab="tab-7">기타</a></li>
+      </ul>
 
       <div class="list__basic">
         
@@ -636,17 +645,29 @@
       var windowWidth = window.matchMedia("screen and (min-width: 1200px)");
 
       if (windowWidth.matches) {
-    
+      
+
+
+        $('.faq-list--pc li').on('click', function(){
+          $(this).addClass('on').siblings().removeClass('on');
+        });
+
+
 
       } else {
 
 
 
-        // $('.faq-list__tab').on('click', function(){
-        //   $(this).toggleClass('active');
+        $('.faq-list__tab').on('click', function(){
           
+          $(this).toggleClass('active');
+          $('.faq-list__tab span').toggleClass('on');
 
-        // });
+          $('.faq-list--mo li').on('click', function(){
+            $(this).addClass('on').siblings().removeClass('on');
+          });
+
+        });
 
 
 
@@ -654,22 +675,6 @@
 
 
 
-      
-      $('.faq-list li').click(function(){							//선택자를 통해 tabs 메뉴를 클릭 이벤트를 지정해줍니다.
-        var tab_id = $(this).attr('data-tab');        		
-
-        $('.faq-list__tab').toggleClass('active');
-        $('.faq-list__tab span').toggleClass('on');
-
-        $(this).addClass('on').siblings().removeClass('on');;					
-        $("#" + tab_id).addClass('on').siblings().removeClass('on');
-      })
-
-
-
-      $('.list__basic__info').on('click', function(){
-        $(this).next('li').slideToggle().siblings('.list__basic__detail').slideUp();
-      });
 
 
 
