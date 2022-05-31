@@ -1,14 +1,5 @@
 /* MAIN */
 
-input {
-  font-family: 'Noto Sans KR', sans-serif;
-  font-size: 1.4rem;
-  outline: none;
-  background: transparent;
-  padding-left: 10px;
-  border: none;
-}
-
 .swiper-pagination-bullet {
   width: 7px !important;
   height: 15px !important;
@@ -119,6 +110,10 @@ main .main-pic .texts .delay4 {
 	transition: opacity 2s, transform 1.6s;
 }
 
+main .swiper-slide { opacity: 0.8; }
+
+main .swiper-slide-active { opacity: 1; }
+
 main .swiper-slide-active .texts .delay1,
 main .swiper-slide-active .texts .delay2,
 main .swiper-slide-active .texts .delay3,
@@ -127,10 +122,10 @@ main .swiper-slide-active .texts .delay4 {
 	transform: translateY(0px);
 }
 
-main .swiper-slide-active .texts .delay1 { transition-delay: 0.7s; }
-main .swiper-slide-active .texts .delay2 { transition-delay: 0.8s; }
-main .swiper-slide-active .texts .delay3 { transition-delay: 0.9s; }
-main .swiper-slide-active .texts .delay4 { transition-delay: 1s; }
+main .swiper-slide-active .texts .delay1 { transition-delay: 1.4s; }
+main .swiper-slide-active .texts .delay2 { transition-delay: 1.6s; }
+main .swiper-slide-active .texts .delay3 { transition-delay: 1.8s; }
+main .swiper-slide-active .texts .delay4 { transition-delay: 2s; }
 
 .md-prod {
   margin: 5rem 0;

@@ -167,6 +167,15 @@ del { color: #990000; }
 
 .hidden { display: none; }
 
+input {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 1.4rem;
+  outline: none;
+  background: transparent;
+  padding-left: 10px;
+  border: none;
+}
+
 #to-top {
   width: 42px;
   height: 42px;
@@ -385,7 +394,7 @@ header .search .searchzone-container {
   overflow: hidden;
 }
 
-header .search .searchzone-container .search_inner { margin: 5rem 5%; }
+header .search .searchzone-container .search_inner { margin: 2rem 5%; }
 
 header .search .searchzone-container .search_inner> :first-child {
   width: 100%;
@@ -886,6 +895,8 @@ footer .f_bottom address .copy {
     height: 100vh;
     left: 0;
   }
+
+  header .search .searchzone-container .search_inner { margin: 2rem auto; }
   
   header .search> :last-child .search_inner {
     position: absolute;
