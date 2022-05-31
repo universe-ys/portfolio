@@ -290,7 +290,7 @@
       <section class="product-view">
         <div class="product__pic">
           <div class="swiper-container">
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper product__pic__wrap">
               <div class="swiper-slide"></div>
               <div class="swiper-slide"></div>
               <div class="swiper-slide"></div>
@@ -307,22 +307,24 @@
             <strong class="kor">콜빈 파이즈™ 크루</strong>
             <p class="eng">Colvin Pines™ Crew</p>
           </div>
-          <div class="prod__info">
+          <div class="prod__info__con">
             <ul>
               <li>
                 <dl class="price__normal">
                   <dt>정상가</dt>
-                  <dd><span>59,000원</span></dd>
+                  <dd>59,000원</dd>
                 </dl>
                 <dl>
                   <dt>구매혜택가</dt>
                   <dd>
-                    <b>54,000원</b>
-                    <a href="javascript:alert('로그인 후 사용 가능합니다.');" class="prod__info__tag">금액할인혜택</a>
-                  </dd>
-                  <dd>
-                    <b>53,100원</b>
-                    <a href="javascript:void(0)" class="prod__info__tag">신규회원혜택</a>
+                    <div>
+                      <b>54,000원</b>
+                      <a href="javascript:alert('로그인 후 사용 가능합니다.');" class="prod__info__tag">금액할인혜택</a>
+                    </div>
+                    <div>
+                      <b>53,100원</b>
+                      <a href="javascript:void(0)" class="prod__info__tag">신규회원혜택</a>
+                    </div>
                   </dd>
                 </dl>
               </li>
@@ -334,8 +336,10 @@
                 <dl class="point">
                   <dt>적립포인트</dt>
                   <dd>
-                    <span>2,950원</span>
-                    <a href="javascript:void(0)" class="prod__info__tag">회원 등급별 혜택</a>
+                    <div>
+                      <span>2,950원</span>
+                      <a href="javascript:void(0)" class="prod__info__tag">회원 등급별 혜택</a>
+                    </div>
                   </dd>
                 </dl>
               </li>
@@ -356,57 +360,59 @@
                 <dl class="point">
                   <dt>구매혜택</dt>
                   <dd>
-                    <span>무이자 할부 안내</span>&nbsp;
-                    <a href="javascript:void(0);" class="prod__info__tag">무이자</a>
+                    <div>
+                      <span>무이자 할부 안내</span>&nbsp;
+                      <a href="javascript:void(0);" class="prod__info__tag">무이자</a>
+                    </div>
                   </dd>
                 </dl>
               </li>
-            </ul>
-            <div>
-              <div class="prod__option">
-                <dl class="color">
+              <li class="color">
+                <dl>
                   <dt>색상선택</dt>
                   <dd>
                     <div class="color-area">
-                      <a href="javascript:void(0)"><img src="../images/product/prod__color--black.jpg" alt="Black"></a>
+                      <a href="javascript:void(0)"><img src="../images/product/prod__color--black2.jpg" alt="Black"></a>
                       <a href="javascript:void(0)"><img src="../images/product/prod__color--beige.jpg" alt="Beige"></a>
                       <a class="is-check"><img src="../images/product/prod__color--white.jpg" alt="White"></a>
                       <a href="javascript:void(0)"><img src="../images/product/prod__color--mint.jpg" alt="Mint"></a>
                       <a href="javascript:void(0)"><img src="../images/product/prod__color--pink.jpg" alt="Pink"></a>
                     </div>
-                    <dl class="color__txt">
-                      <dt>COLOR</dt>
-                      &nbsp;:&nbsp;
-                      <dd>White</dd>
-                    </dl>
+                    <div class="color__txt">
+                      COLOR&nbsp;:&nbsp; White
+                    </div>
                   </dd>
                 </dl>
-                <dl class="size">
-                  <dt>사이즈 선택
-                    <span><a href="javascript:void(0);" class="size__btn gv__info__tag">사이즈 차트보기</a></span>
-                  </dt>
-                  <dd>
-                    <ul class="size-area" id="vSize">
-                      <li>95</li>
-                      <li>100</li>
-                      <li>105</li>
-                    </ul>
+              </li>
+              <li class="size">
+                <dl>
+                  <dt>사이즈 선택</dt>
+                  <dd class="size-area" id="vSize">
+                    <span>95</span>
+                    <span>100</span>
+                    <span>105</span>
                   </dd>
                 </dl>
-                <dl class="quantity" id="vpop">
+              </li>
+              <li class="quantity" id="vpop">
+                <dl>
                   <dt>수량</dt>
                   <dd class="quantity__area">
-                    <a href="javascript:void(0);" name="qtyMinus" id="qtyMinus"><img src="../images/product/btn_qty_minus.png" alt="수량 빼기"></a>
-                    <input type="text" class="quantity__input" name="ProductQuantity" id="ProductQuantity" value="1" maxlength="3" onkeypress="validate(event)" onkeyup="hangle_onkeyup(jQuery(this))">
-                    <a href="javascript:void(0);" name="qtyPlus" id="qtyPlus"><img src="../images/product/btn_qty_plus.png" alt="수량 더하기"></a>
+                    <div>
+                      <a href="javascript:void(0);" name="qtyMinus" id="qtyMinus"><img src="../images/product/btn_qty_minus.png" alt="수량 빼기"></a>
+                      <input type="text" class="quantity__input" name="ProductQuantity" id="ProductQuantity" value="1" maxlength="3" onkeypress="validate(event)" onkeyup="hangle_onkeyup(jQuery(this))">
+                      <a href="javascript:void(0);" name="qtyPlus" id="qtyPlus"><img src="../images/product/btn_qty_plus.png" alt="수량 더하기"></a> 
+                    </div>
                   </dd>
                 </dl>
-              </div>
-              <dl class="prod__total">
-                <dt>주문금액</dt>
-                <dd>59,000원</dd>
-              </dl>
-            </div>
+              </li>
+              <li>
+                <dl class="prod__total">
+                  <dt>주문금액</dt>
+                  <dd>59,000원</dd>
+                </dl>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -755,7 +761,7 @@
       </section>
     </div>
 
-    <ul class="product-foot">
+    <ul class="product-foot mobile-only">
       <li class="like-icon"><span class="material-symbols-outlined wish">favorite</span></li>
       <li><a href="javascript:void(0)">장바구니</a></li>
       <li><a href="javascript:void(0)">바로구매</a></li>
@@ -763,11 +769,22 @@
   
     </ul>
 
-    <div id="linked">
+    <div id="linked mobile-only">
       <span class="material-symbols-outlined">share</span>
     </div>
 
   </section>
+
+  <script>
+    new Swiper('.product-view .swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      pagination: {
+        el: '.product-view .swiper-pagination',
+        clickable: true,
+      },
+    }); 
+  </script>
 
 
   <footer>

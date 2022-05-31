@@ -60,6 +60,10 @@
   margin-bottom: 1rem;
 }
 
+.signin .membership-container .sns_login> div {
+  cursor: pointer;
+}
+
 .signin .membership-container .sns_login> :first-child .ico {
   background: url('../images/sign/ico_mo_naver.png') no-repeat;
   background-position: center center;
