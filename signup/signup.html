@@ -674,6 +674,25 @@
   </section>
 
 
+  
+  <script>
+    // 모두 동의, 모두 동의안함
+    jQuery(function(){
+      jQuery("#checkALL").change(function(){
+        if ( jQuery(this).prop("checked") ) {
+          jQuery("#agree1").prop("checked", true);
+          jQuery("#privacy1").prop("checked", true);
+          jQuery("#ad1").prop("checked", true);
+        } else {
+          jQuery("#agree2").prop("checked", true);
+          jQuery("#privacy2").prop("checked", true);
+          jQuery("#ad2").prop("checked", true);
+        }
+      })
+    })
+  </script>
+
+
   <footer>
 
     <div class="inner">

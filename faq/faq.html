@@ -289,8 +289,8 @@
     <p class="desc">무엇을 도와드릴까요?</p>
     
     <div class="inner">
-      <div class="faq-list__tab">
-        <ul class="faq-list mo">
+      <div class="faq-list__tab mo">
+        <ul class="faq-list">
           <li class="tab on"><a href="#tab1" class="btn">회원관련</a></li>
           <li class="tab"><a href="#tab2" class="btn">주문관련</a></li>
           <li class="tab"><a href="#tab3" class="btn">결제관련</a></li>
@@ -301,15 +301,17 @@
         </ul>
         <span class="material-symbols-outlined">expand_more</span>
       </div>
-      <ul class="faq-list pc">
-        <li class="tab on"><a href="#tab1" class="btn">회원</a></li>
-        <li class="tab"><a href="#tab2" class="btn">주문</a></li>
-        <li class="tab"><a href="#tab3" class="btn">결제</a></li>
-        <li class="tab"><a href="#tab4" class="btn">배송</a></li>
-        <li class="tab"><a href="#tab5" class="btn">상품</a></li>
-        <li class="tab"><a href="#tab6" class="btn">A/S</a></li>
-        <li class="tab"><a href="#tab7" class="btn">기타</a></li>
-      </ul>
+      <div class="faq-list__tab pc">
+        <ul class="faq-list">
+          <li class="tab on"><a href="#tab1" class="btn">회원</a></li>
+          <li class="tab"><a href="#tab2" class="btn">주문</a></li>
+          <li class="tab"><a href="#tab3" class="btn">결제</a></li>
+          <li class="tab"><a href="#tab4" class="btn">배송</a></li>
+          <li class="tab"><a href="#tab5" class="btn">상품</a></li>
+          <li class="tab"><a href="#tab6" class="btn">A/S</a></li>
+          <li class="tab"><a href="#tab7" class="btn">기타</a></li>
+        </ul>
+      </div>
 
       <div class="list__basic">
         
@@ -646,9 +648,30 @@
       
 
 
-        $('.faq-list.pc li').on('click', function(){
+        $('.faq-list li').on('click', function(){
           $(this).addClass('on').siblings().removeClass('on');
         });
+
+
+        const tabList = document.querySelectorAll('.faq-list__tab.pc .faq-list li');
+        const contents = document.querySelectorAll('.list__basic .list__basic__con')
+
+        let activeCont = ''; 
+
+        for(var i = 0; i < tabList.length; i++){
+          tabList[i].querySelector('.btn').addEventListener('click', function(e){
+            e.preventDefault();
+            for(var j = 0; j < tabList.length; j++){
+              
+              tabList[j].classList.remove('on');
+              contents[j].classList.remove('on');
+            }
+
+            this.parentNode.classList.add('on');
+            activeCont = this.getAttribute('href');
+            document.querySelector(activeCont).classList.add('on');
+          });
+        }
 
 
 
@@ -661,13 +684,30 @@
           $(this).toggleClass('active');
           $('.faq-list__tab span').toggleClass('on');
 
-          $('.faq-list.mo li').on('click', function(){
-            $(this).addClass('on').siblings().removeClass('on');
+          $('.faq-list li').on('click', function(){
+            $(this).addClass('on').siblings().removeClass('on');;
           });
 
         });
 
 
+        const tabList = document.querySelectorAll('.faq-list__tab.mo .faq-list li');
+        const contents = document.querySelectorAll('.list__basic .list__basic__con')
+
+        let activeCont = ''; 
+
+        for(var i = 0; i < tabList.length; i++){
+          tabList[i].querySelector('.btn').addEventListener('click', function(e){
+            e.preventDefault();
+            for(var j = 0; j < tabList.length; j++){
+              tabList[j].classList.remove('on');
+              contents[j].classList.remove('on');
+            }
+            this.parentNode.classList.add('on');
+            activeCont = this.getAttribute('href');
+            document.querySelector(activeCont).classList.add('on');
+          });
+        }
 
       }
 
@@ -675,35 +715,10 @@
 
       $('.list__basic__info').on('click', function(){
         $(this).next('.list__basic__detail').slideToggle('on');
-        $(this).siblings().next('.list__basic__detail').slideUp();
+        $(this).siblings().next('.list__basic__detail').hide();
       });
 
-
-      // const tabList = document.querySelectorAll('.faq-list .tab');
-      // const contents = document.querySelectorAll('.list__basic .list__basic__con')
-      // let activeCont = ''; // 현재 활성화 된 컨텐츠 (기본:#tab1 활성화)
-
-      // for(var i = 0; i < tabList.length; i++){
-      //   tabList[i].querySelector('.btn').addEventListener('click', function(e){
-      //     e.preventDefault();
-      //     for(var j = 0; j < tabList.length; j++){
-      //       // 나머지 버튼 클래스 제거
-      //       tabList[j].classList.remove('on');
-
-      //       // 나머지 컨텐츠 display:none 처리
-      //       contents[j].style.display = 'none';
-      //     }
-
-      //     // 버튼 관련 이벤트
-      //     this.parentNode.classList.add('on');
-
-      //     // 버튼 클릭시 컨텐츠 전환
-      //     activeCont = this.getAttribute('href');
-      //     document.querySelector(activeCont).style.display = 'block';
-      //   });
-      // }
-
-
+      
 
     });
   </script>
