@@ -895,8 +895,6 @@ footer .f_bottom address .copy {
     height: 100vh;
     left: 0;
   }
-
-  header .search .searchzone-container .search_inner { margin: 2rem auto; }
   
   header .search> :last-child .search_inner {
     position: absolute;
@@ -906,6 +904,7 @@ footer .f_bottom address .copy {
     width: 1200px;
     height: 80vh;
     background: transparent;
+    margin: 2rem auto;
   }
   
   header .search> :last-child .search_inner> :first-child { margin: 6rem 0 3rem; }
