@@ -289,6 +289,9 @@
 
       <section class="product-view">
         <div class="product__pic">
+          <div class="linked">
+            <span class="material-symbols-outlined">share</span>
+          </div>
           <div class="swiper-container">
             <div class="swiper-wrapper product__pic__wrap">
               <div class="swiper-slide"></div>
@@ -370,17 +373,12 @@
               <li class="color">
                 <dl>
                   <dt>색상선택</dt>
-                  <dd>
-                    <div class="color-area">
-                      <a href="javascript:void(0)"><img src="../images/product/prod__color--black2.jpg" alt="Black"></a>
-                      <a href="javascript:void(0)"><img src="../images/product/prod__color--beige.jpg" alt="Beige"></a>
-                      <a class="is-check"><img src="../images/product/prod__color--white.jpg" alt="White"></a>
-                      <a href="javascript:void(0)"><img src="../images/product/prod__color--mint.jpg" alt="Mint"></a>
-                      <a href="javascript:void(0)"><img src="../images/product/prod__color--pink.jpg" alt="Pink"></a>
-                    </div>
-                    <div class="color__txt">
-                      COLOR&nbsp;:&nbsp; White
-                    </div>
+                  <dd class="color-area">
+                    <a href="javascript:void(0)"><img src="../images/product/prod__color--black2.jpg" alt="Black"></a>
+                    <a href="javascript:void(0)"><img src="../images/product/prod__color--beige.jpg" alt="Beige"></a>
+                    <a class="is-check"><img src="../images/product/prod__color--white.jpg" alt="White"></a>
+                    <a href="javascript:void(0)"><img src="../images/product/prod__color--mint.jpg" alt="Mint"></a>
+                    <a href="javascript:void(0)"><img src="../images/product/prod__color--pink.jpg" alt="Pink"></a>
                   </dd>
                 </dl>
               </li>
@@ -389,7 +387,7 @@
                   <dt>사이즈 선택</dt>
                   <dd class="size-area" id="vSize">
                     <span>95</span>
-                    <span>100</span>
+                    <span class="is-check">100</span>
                     <span>105</span>
                   </dd>
                 </dl>
@@ -426,7 +424,7 @@
           </ul>
 
           <div class="cont_area">
-            <div id="tab1" class="cont">
+            <div id="tab1" class="cont" style="display:block;">
               <div class="benefit">
                 <img src="../images/product/prod--benefit.png" alt="구매혜택" />
               </div>
@@ -615,7 +613,7 @@
                 </dl>
               </div>
             </div>
-            <div id="tab3" class="cont" style="display:block;">
+            <div id="tab3" class="cont">
               <div class="review-write-box">
                 <div class="stars__inp">
                   <p class="tit">상품에 대한 별점을 매겨주세요</p>
@@ -689,7 +687,7 @@
       <section class="product-rec">
         <h5 class="kor">이 상품을 본 고객이 함께 본 상품</h5>
         <div class="swiper-container">
-          <div class="swiper-wrapper">
+          <div class="swiper-wrapper product-rec__con">
             <div class="swiper-slide">
               <div class="prod-rec__pic"></div>
               <ul class="prod-rec__color">
@@ -751,29 +749,93 @@
       </section>
     </div>
 
-    <ul class="product-foot mobile-only">
+    <ul class="product-foot">
       <li class="like-icon"><span class="material-symbols-outlined wish">favorite</span></li>
-      <li><a href="javascript:void(0)">장바구니</a></li>
-      <li><a href="javascript:void(0)">바로구매</a></li>
-  
-  
+      <li>
+        <a href="javascript:void(0)">장바구니</a>
+        <a href="javascript:void(0)">바로구매</a>
+      </li>
     </ul>
-
-    <div id="linked mobile-only">
-      <span class="material-symbols-outlined">share</span>
-    </div>
 
   </section>
 
   <script>
-    new Swiper('.product-view .swiper-container', {
+    $(document).ready(function(){
+      
+      
+      // color pick
+      $('.color-area> a').on('click', function(){
+        $(this).addClass('is-check').siblings().removeClass('is-check');
+      });
+      
+      
+
+      // size pick
+      $('.size-area> span').on('click', function(){
+        $(this).addClass('is-check').siblings().removeClass('is-check');
+      });
+    
+    
+    
+    });
+
+
+
+    // 상품 slide
+    new Swiper('.product__pic .swiper-container', {
       slidesPerView: 1,
       spaceBetween: 20,
       pagination: {
-        el: '.product-view .swiper-pagination',
+        el: '.product__pic .swiper-pagination',
         clickable: true,
       },
-    }); 
+    });
+
+
+    // tab menu
+    const tabList = document.querySelectorAll('.tab_menu .list li');
+    const contents = document.querySelectorAll('.tab_menu .cont_area .cont')
+    let activeCont = ''; // 현재 활성화 된 컨텐츠 (기본:#tab1 활성화)
+
+    for(var i = 0; i < tabList.length; i++){
+      tabList[i].querySelector('.btn').addEventListener('click', function(e){
+        e.preventDefault();
+        for(var j = 0; j < tabList.length; j++){
+          // 나머지 버튼 클래스 제거
+          tabList[j].classList.remove('on');
+
+          // 나머지 컨텐츠 display:none 처리
+          contents[j].style.display = 'none';
+        }
+
+        // 버튼 관련 이벤트
+        this.parentNode.classList.add('on');
+
+        // 버튼 클릭시 컨텐츠 전환
+        activeCont = this.getAttribute('href');
+        document.querySelector(activeCont).style.display = 'block';
+      });
+    }
+    
+
+
+    // 추천상품 slide
+    new Swiper('.product-rec .swiper-container', {
+      // width: 400,
+      slidesPerView: 1.2,
+      spaceBetween: 30,
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+        1024: {
+          slidesPerView: 4,
+        },
+      },
+    });
   </script>
 
 
@@ -845,8 +907,6 @@
     </div>
   
   </footer>
-
-  
 
 
   <div id="to-top">
