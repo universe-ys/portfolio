@@ -47,10 +47,6 @@
   padding: 8px 0;
 }
 
-.notice .notice-area .list__basic .list__tit.on {
-  background: rgba(51, 51, 51, .3);
-}
-
 .notice .notice-area .list__basic> li:not(:nth-child(13)) {
   border-bottom: 1px solid #ddd;
 }

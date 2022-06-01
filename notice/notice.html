@@ -604,7 +604,7 @@
       $('.list__tit').on('click', function(){
         $(this).toggleClass('on');
         if($(this).hasClass('on')){
-          $(this).parents('li').next('li').slideDown().siblings('.notice-view__text').slideUp();
+          $(this).parents('li').next('li').slideDown().siblings('.notice-view__text').hide();
         } else {
           $('.notice-view__text').css({"display": "none"});
         }
