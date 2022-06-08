@@ -51,7 +51,7 @@
 
 .faq .faq-list__tab.mo .faq-list li:hover,
 .faq .faq-list__tab.mo .faq-list li:active {
-  background: rgba(0, 122, 185, .5);
+  background: rgba(51, 51, 51, .3);
   color: #fff;
 }
 
@@ -60,7 +60,7 @@
 .faq .list__basic .list__basic__con {
   display: none;
   margin: 2rem 0;
-  padding: 1rem 0;
+  padding: 1rem 5%;
   border-top: 2px solid #333;
   border-bottom: 2px solid #333;
 } 
@@ -68,7 +68,7 @@
 .faq .list__basic .list__basic__con.on { display: block; }
 
 .faq .list__basic .list__basic__info {
-  padding: 8px 5%;
+  padding: 8px 0;
   height: 40px;
   line-height: 40px;
   cursor: pointer;
@@ -221,6 +221,14 @@
 
   .faq .list__basic { margin: 3rem 0; }
 
+  .faq .list__basic .list__basic__con {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
+  .faq .list__basic .list__basic__info {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 
 }

@@ -86,6 +86,18 @@ button.primary {
   border: 1px solid #333;
 }
 
+button.cancel {
+  color: #333;
+  border: 1px solid #333;
+  background: rgba(51, 51, 51, .1);
+}
+
+button.cancle:hover, button.cancel:active {
+  background: rgba(51, 51, 51, .5);
+  border: 1px solid rgba(51, 51, 51, .5);
+  color: #fff;
+}
+
 button.primary:hover, button.primary:active {
   background: #007ab9;
   border: 1px solid #007ab9;
@@ -174,6 +186,12 @@ input {
   background: transparent;
   padding-left: 10px;
   border: none;
+}
+
+input[type=radio], input[type=checkbox] {
+  width: 16px;
+  height: 16px;
+  vertical-align: top;
 }
 
 #to-top {
