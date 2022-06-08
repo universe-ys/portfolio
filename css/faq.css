@@ -59,14 +59,16 @@
 
 .faq .list__basic .list__basic__con {
   display: none;
+  margin: 2rem 0;
+  padding: 1rem 0;
   border-top: 2px solid #333;
   border-bottom: 2px solid #333;
-  padding: 1rem 5%;
 } 
 
 .faq .list__basic .list__basic__con.on { display: block; }
 
 .faq .list__basic .list__basic__info {
+  padding: 8px 5%;
   height: 40px;
   line-height: 40px;
   cursor: pointer;
@@ -80,10 +82,9 @@
 .faq .list__basic .list__basic__info:not(:first-child) { border-top: 1px solid #ddd; }
 
 .faq .list__basic .list__basic__detail {
-  background: rgb(250, 250, 250);
-  color: #828282;
-  padding: 1rem 5%;
   display: none;
+  background: rgb(250, 250, 250);
+  padding: 1rem 5%;
 }
 
 .faq .list__basic .list__basic__detail.on { display: block; }
@@ -144,7 +145,7 @@
   .faq .faq-list li:not(:last-child) { border-right: 1px solid #333; }
 
   .faq .faq-list li.on {
-    background: rgba(0, 122, 185, .5);
+    background: rgba(51, 51, 51, .3);
     color: #fff;
   }
 
